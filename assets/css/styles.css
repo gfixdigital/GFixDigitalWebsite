@@ -3681,26 +3681,6 @@ body.modal-open {
   opacity: 0.85;
 }
 
-.social-link[aria-label="Facebook"]:hover {
-  color: #1877f2;
-}
-
-.social-link[aria-label="Instagram"]:hover {
-  color: #e4405f;
-}
-
-.social-link[aria-label="TikTok"]:hover {
-  color: #69c9d0;
-}
-
-.social-link[aria-label="X (Twitter)"]:hover {
-  color: #000;
-}
-
-.social-link[aria-label="LinkedIn"]:hover {
-  color: #0a66c2;
-}
-
 /* ============ Footer Bottom ============ */
 .footer-bottom {
   font-size: .8rem;
