@@ -18,11 +18,18 @@
 </head>
 
 <body>
+  
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-ring"></div>
+    <div class="loader-brand">GFix<span>.</span></div>
+  </div>
+
   <!-- Navbar -->
   <header class="navbar" id="navbar">
     <div class="container nav-inner">
       <a href="index.html" class="logo">
-        <img src="./assets/Pictures/Logo 2.png" alt="GFix Digital Logo">
+        <img src="./assets/Pictures/GFix icon.png" alt="GFix Digital Logo">
       </a>
       <a href="index.html" class="logo2">GFix<span>Digital</span></a>
       <nav class="nav-links" id="navLinks">
@@ -34,7 +41,13 @@
             <a href="courses.html"><i class="fa fa-graduation-cap"></i> Training</a>
           </div>
         </div>
-        <a href="projects.html"><i class="fa fa-briefcase"></i> Projects</a>
+        <div class="nav-dropdown">
+          <a href="projects.html" class="nav-dropdown-toggle"><i class="fa fa-briefcase"></i> Projects <i
+              class="fa fa-chevron-down nav-chevron"></i></a>
+          <div class="nav-dropdown-menu">
+            <a href="projects.html#good-partner"><i class="fa fa-handshake-o"></i> Partners</a>
+          </div>
+        </div>
         <a href="team.html"><i class="fa fa-users"></i> Team</a>
         <a href="about.html"><i class="fa fa-info-circle"></i> About</a>
         <a href="contact.html" class="nav-cta"><i class="fa fa-envelope"></i> Contact</a>
@@ -45,165 +58,256 @@
     </div>
   </header>
 
-  <main class="contact-page">
-    <section class="section">
-      <div class="container">
-        <div class="section-head reveal">
+  <!-- Contact Information -->
+  <section class="section" id="contact-info">
+    <div class="container">
+      <div class="section-head reveal">
           <span class="eyebrow">Contact Us</span>
           <h1>Let's Create <span class="gradient-text">Future</span> Together</h1>
           <p>Have a project in mind or want to join our training? We're here to help.</p>
-        </div>
-
-        <div class="contact-grid">
-          <div class="contact-info-panel reveal">
-            <div class="info-item">
-              <div class="info-icon"><i class="fa fa-envelope"></i></div>
-              <div class="info-content">
-                <h3>Email Us</h3>
-                <p><a href="mailto:gfixdigital@gmail.com">gfixdigital@gmail.com</a></p>
-                <p>We reply within 24 hours.</p>
-              </div>
-            </div>
-
-            <div class="info-item">
-              <div class="info-icon"><i class="fa fa-phone"></i></div>
-              <div class="info-content">
-                <h3>Call Us</h3>
-                <p>+92 336 5842012</p>
-                <p>+92 301 3021311</p>
-                <p>Mon - Sat, 9am - 6pm</p>
-              </div>
-            </div>
-
-            <div class="social-panel">
-              <h3>Connect With Us</h3>
-              <div class="social-links-large">
-                <a href="https://facebook.com/gfixdigital" target="_blank" rel="noopener noreferrer"
-                  aria-label="Facebook"><i class="fa fa-facebook"></i></a>
-                <a href="https://instagram.com/gfixdigital" target="_blank" rel="noopener noreferrer"
-                  aria-label="Instagram"><i class="fa fa-instagram"></i></a>
-                <a href="https://linkedin.com/company/gfixdigital" target="_blank" rel="noopener noreferrer"
-                  aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
-                <a href="https://twitter.com/gfixdigital" target="_blank" rel="noopener noreferrer"
-                  aria-label="Twitter"><i class="fa fa-twitter"></i></a>
-                <a href="https://wa.me/923365842012" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i
-                    class="fa fa-whatsapp"></i></a>
-                <a href="https://wa.me/92013021311" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i
-                    class="fa fa-whatsapp"></i></a>
-              </div>
-            </div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="info-card">
+            <div class="info-icon"><i class="fa fa-envelope"></i></div>
+            <h3>Email Address</h3>
+            <p><a href="mailto:gfixdigital@gmail.com">gfixdigital@gmail.com</a></p>
           </div>
+          <div class="info-card">
+            <div class="info-icon"><i class="fa fa-phone"></i></div>
+            <h3>Phone Number</h3>
+            <p><a href="tel:+923365842012">+92 336 5842012</a></p>
+            <p><a href="tel:+923013021311">+92 301 3021311</a></p>
+          </div>
+          <div class="info-card">
+            <div class="info-icon"><i class="fa fa-clock-o"></i></div>
+            <h3>Working Hours</h3>
+            <p>Monday - Saturday, 10:00 AM to 8:00 PM</p>
+          </div>
+        </div>
+        <div class="contact-form reveal">
+          <div class="form-card">
+            <h3>Connect On Social Media</h3>
+            <p>Follow us for updates, projects, and announcements.</p>
+            <div class="social-links">
+              <a href="https://facebook.com/gfixdigital" class="social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+              </a>
+              <a href="https://instagram.com/gfixdigital" class="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+              </a>
+              <a href="https://tiktok.com/@gfixdigital" class="social-link" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                </svg>
+              </a>
+              <a href="https://twitter.com/gfixdigital" class="social-link" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+              </a>
+              <a href="https://linkedin.com/company/gfixdigital" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+              </a>
+            </div>
+            <a href="https://wa.me/923365842012" class="btn btn-green" target="_blank" rel="noopener noreferrer" style="margin-top: 20px;">
+              <i class="fa fa-whatsapp"></i> Chat on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-          <div class="contact-form-panel reveal">
-            <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
-              <input type="hidden" name="access_key" value="0018a1a2-944a-4d2b-9273-faaf5c829e7c">
-              <input type="hidden" name="subject" value="New Contact Form Submission">
-              <input type="checkbox" name="botcheck" id="" style="display: none;">
-
-              <div class="form-grid">
-                <div class="form-group">
-                  <label for="name">Full Name</label>
-                  <input type="text" id="name" name="name" placeholder="Asim" required>
-                </div>
-                <div class="form-group">
-                  <label for="email">Email Address</label>
-                  <input type="email" id="email" name="email" placeholder="you@example.com" required>
-                </div>
-              </div>
-
+  <!-- Feedback Section -->
+  <section class="section" id="feedback" style="background: var(--bg-soft);">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">YOUR FEEDBACK</div>
+        <h2>We Value Your Feedback</h2>
+        <p>Help us improve by sharing your experience with Gfix Digital</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="info-card">
+            <div class="info-icon"><i class="fa fa-star"></i></div>
+            <h3>Rate Our Services</h3>
+            <p>Your rating helps us maintain quality and improve where needed.</p>
+          </div>
+          <div class="info-card">
+            <div class="info-icon"><i class="fa fa-envelope"></i></div>
+            <h3>Share Your Experience</h3>
+            <p>Tell us what went well and what we can do better.</p>
+          </div>
+          <div class="info-card">
+            <div class="info-icon"><i class="fa fa-comments"></i></div>
+            <h3>We Listen & Act</h3>
+            <p>Every piece of feedback is reviewed and helps shape our services.</p>
+          </div>
+        </div>
+        <div class="contact-form reveal">
+          <div class="form-card">
+            <h3>Submit Feedback</h3>
+            <p>Your honest feedback helps us serve you better.</p>
+            <form id="feedbackForm">
               <div class="form-group">
-                <label for="interest">I'm interested in</label>
-                <select id="interest" name="interest" required>
-                  <option value="" disabled selected>Select an option</option>
-                  <option value="Training/Courses">Training/Courses</option>
-                  <option value="Video Editing">Video Editing</option>
-                  <option value="Graphic Design">Graphic Design</option>
-                  <option value="Web Development">Web Development</option>
-                  <option value="Digital Marketing">Digital Marketing</option>
-                  <option value="Other">Other</option>
+                <label for="fb-name">Name</label>
+                <input type="text" id="fb-name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="fb-email">Email</label>
+                <input type="email" id="fb-email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="fb-type">You are a...</label>
+                <select id="fb-type" name="type" required>
+                  <option value="">Select</option>
+                  <option value="client">Client / Business</option>
+                  <option value="student">Student / Trainee</option>
+                  <option value="visitor">Website Visitor</option>
                 </select>
               </div>
-
               <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" placeholder="Tell us about your project or inquiry..."
-                  required></textarea>
+                <label>Rating</label>
+                <div class="star-rating" id="starRating">
+                  <span class="star" data-value="1">★</span>
+                  <span class="star" data-value="2">★</span>
+                  <span class="star" data-value="3">★</span>
+                  <span class="star" data-value="4">★</span>
+                  <span class="star" data-value="5">★</span>
+                </div>
+                <input type="hidden" id="fb-rating" name="rating" value="0">
               </div>
-
-              <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Send
-                Message</button>
-              <div id="formStatus" class="form-status"></div>
+              <div class="form-group">
+                <label for="fb-message">Your Feedback</label>
+                <textarea id="fb-message" name="message" rows="4" required placeholder="What was your experience like? Any suggestions for improvement?"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">Submit Feedback →</button>
             </form>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Map or Location Section -->
-    <section class="section" style="padding-top: 0;">
-      <div class="container reveal">
-        <div class="location-card">
-          <div class="location-info">
-            <div class="info-icon"><i class="fa fa-map-marker"></i></div>
-            <div>
-              <h3>Our Location</h3>
-              <p>Globalize your vision with GFix Digital.</p>
-              <p>Swat, KPK, Pakistan</p>
-            </div>
-          </div>
-          <div class="location-map" aria-label="Google map location">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.689666443173!2d72.38593887743815!3d34.75977913594074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dc22b64bb3a4e9%3A0xa4b234bf5e20c97c!2sSwat%20Mingora%2C%20Swat%2C%20Pakistan!5e0!3m2!1sen!2s!4v1778054556738!5m2!1sen!2s"
-              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <!-- Map or Location Section -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container reveal">
+      <div class="location-card">
+        <div class="location-info">
+          <div class="info-icon"><i class="fa fa-map-marker"></i></div>
+          <div>
+            <h3>Our Location</h3>
+            <p>Globalize your vision with GFix Digital.</p>
+            <p>Swat, KPK, Pakistan</p>
           </div>
         </div>
+        <div class="location-map" aria-label="Google map location">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.689666443173!2d72.38593887743815!3d34.75977913594074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dc22b64bb3a4e9%3A0xa4b234bf5e20c97c!2sSwat%20Mingora%2C%20Swat%2C%20Pakistan!5e0!3m2!1sen!2s!4v1778054556738!5m2!1sen!2s"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- CTA -->
+    <section class="cta" id="contact">
+      <div class="container cta-inner reveal">
+        <h2>Start Your <span class="cta-gradient">Digital Journey</span> Today.</h2>
+        <p>Join hundreds of learners and brands building the future with Gfix Digital.</p>
+        <a href="#" class="btn btn-light">Join Now →</a>
       </div>
     </section>
-  </main>
 
   <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div>
-        <a href="index.html" class="logo">
-          <img src="./assets/Pictures/Logo 2 White.png" alt="GFix Digital Logo">
-        </a>
-        <a href="index.html" class="logo logo-light"><span>The Digital Hub</span></a>
-        <p class="footer-about">Premium digital agency & training hub crafting excellence since day one.</p>
-      </div>
-      <div>
-        <h5>Company</h5>
-        <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="courses.html">Training</a></li>
-        </ul>
-      </div>
-      <div>
-        <h5>Services</h5>
-        <ul>
-          <li><a href="#">Video Editing</a></li>
-          <li><a href="#">Graphic Design</a></li>
-          <li><a href="#">Web Development</a></li>
-          <li><a href="#">ICT Training</a></li>
-        </ul>
-      </div>
-      <div>
-        <h5>Contact</h5>
-        <ul class="contact-link">
-          <li><a href="mailto:gfixdigital@gmail.com"><i class="fa fa-envelope"></i>gfixdigital@gmail.com</a></li>
-          <li><i class="fa fa-phone"></i>+92 336 5842012</li>
-          <li><i class="fa fa-phone"></i>+92 301 3021311</li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="container">
-        <p>© <span id="year"></span> GFix Digital. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <a href="index.html" class="logo">
+                    <img src="./assets/Pictures/Logo 2 White.png" alt="GFix Digital Logo">
+                </a>
+                <a href="index.html" class="logo logo-light"><span>The Digital Hub</span></a>
+                <p class="footer-about">Premium digital agency & training hub crafting excellence since day one.</p>
+            </div>
+            <div>
+                <h5>Company</h5>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="courses.html">Training</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5>Services</h5>
+                <ul>
+                    <li><a href="#">ICT Training</a></li>
+                    <li><a href="#">Digital Marketing</a></li>
+                    <li><a href="#">Graphic Designing</a></li>
+                    <li><a href="#">Video Editing</a></li>
+                    <li><a href="#">Web Development</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5>Contact</h5>
+                <ul class="contact-link">
+                    <li><a href="mailto:gfixdigital@gmail.com"><i class="fa fa-envelope"></i>gfixdigital@gmail.com</a>
+                    </li>
+                    <li><i class="fa fa-phone"></i>+92 336 5842012</li>
+                    <li><i class="fa fa-phone"></i>+92 301 3021311</li>
+                </ul>
+                <div class="social-links">
+                    <a href="https://facebook.com/gfixdigital" class="social-link" aria-label="Facebook" target="_blank"
+                        rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                        </svg>
+                    </a>
+                    <a href="https://instagram.com/gfixdigital" class="social-link" aria-label="Instagram"
+                        target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                    </svg>
+                </a>
+                <a href="https://tiktok.com/@gfixdigital" class="social-link" aria-label="TikTok" target="_blank"
+                    rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
+                    </svg>
+                </a>
+                <a href="https://twitter.com/gfixdigital" class="social-link" aria-label="Twitter" target="_blank"
+                    rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                    </svg>
+                </a>
+                <a href="https://linkedin.com/company/gfixdigital" class="social-link" aria-label="LinkedIn"
+                    target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">&copy; <span id="year"></span> GFix Digital. All rights reserved.</div>
+        </div>
+    </footer>
 
   <script src="./assets/script/script.js"></script>
 </body>

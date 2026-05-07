@@ -29,7 +29,7 @@
   <header class="navbar" id="navbar">
     <div class="container nav-inner">
       <a href="index.html" class="logo">
-        <img src="./assets/Pictures/Logo 2.png" alt="GFix Digital Logo">
+        <img src="./assets/Pictures/GFix icon.png" alt="GFix Digital Logo">
       </a>
       <a href="index.html" class="logo2">GFix<span>Digital</span></a>
       <nav class="nav-links" id="navLinks">
@@ -41,7 +41,13 @@
             <a href="courses.html"><i class="fa fa-graduation-cap"></i> Training</a>
           </div>
         </div>
-        <a href="projects.html"><i class="fa fa-briefcase"></i> Projects</a>
+        <div class="nav-dropdown">
+          <a href="projects.html" class="nav-dropdown-toggle"><i class="fa fa-briefcase"></i> Projects <i
+              class="fa fa-chevron-down nav-chevron"></i></a>
+          <div class="nav-dropdown-menu">
+            <a href="projects.html#good-partner"><i class="fa fa-handshake-o"></i> Partners</a>
+          </div>
+        </div>
         <a href="team.html"><i class="fa fa-users"></i> Team</a>
         <a href="about.html"><i class="fa fa-info-circle"></i> About</a>
         <a href="contact.html" class="nav-cta"><i class="fa fa-envelope"></i> Contact</a>
@@ -53,6 +59,83 @@
   </header>
 
   <main>
+    <!-- Page intro -->
+    <section class="about-page-hero" aria-labelledby="about-heading">
+      <div class="container about-page-hero-inner reveal">
+        <span class="eyebrow">Who we are</span>
+        <h1 id="about-heading">A digital studio and <span class="gradient-text">learning partner</span></h1>
+        <p>
+          GFix Digital brings together commercial creative work and practical training. We help organizations
+          show up with clarity online, and we help individuals build confident, job-ready skills through
+          real projects and guided mentorship.
+        </p>
+        <div class="about-page-hero-actions">
+          <a href="contact.html" class="btn btn-primary">Start a conversation</a>
+          <a href="team.html" class="btn btn-ghost">Meet our team</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Story -->
+    <section class="section about" id="about-story" aria-labelledby="story-heading">
+      <div class="container">
+        <div class="section-head reveal" style="max-width: 800px;">
+          <span class="eyebrow">Our story</span>
+          <h2 id="story-heading">Built for brands, <span class="gradient-text">rooted in education</span></h2>
+          <p>
+            From day one, our model has been simple: the same standards that power work for clients also
+            shape how we teach. Briefs, deadlines, and quality reviews are not classroom theory—they are part
+            of how we operate every week.
+          </p>
+          <p style="margin-top: 16px;">
+            That dual focus keeps our training relevant and our services sharp. Whether you need a campaign
+            asset, a site you can maintain, or a structured path into digital careers, you get a team that
+            cares about craft, communication, and outcomes.
+          </p>
+          <div class="stats" role="group" aria-label="Highlights" style="justify-content: center; margin-top: 36px;">
+            <div><strong>500+</strong><span>Learners supported</span></div>
+            <div><strong>200+</strong><span>Projects shipped</span></div>
+            <div><strong>50+</strong><span>Client partnerships</span></div>
+          </div>
+          <a href="services.html" class="btn btn-primary" style="margin-top: 36px;">Explore services</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values -->
+    <section class="section" id="values" aria-labelledby="values-heading">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">What guides us</span>
+          <h2 id="values-heading">Principles we work <span class="gradient-text">by</span></h2>
+          <p>Clear expectations, honest timelines, and work you can stand behind—whether it ships to a client or becomes
+            part of a student portfolio.</p>
+        </div>
+        <div class="grid grid-4">
+          <article class="feature reveal">
+            <div class="feature-icon" aria-hidden="true"><i class="fa fa-link"></i></div>
+            <h4>Partnership</h4>
+            <p>We listen first, propose clearly, and stay accountable from kickoff through delivery.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="feature-icon" aria-hidden="true"><i class="fa fa-diamond"></i></div>
+            <h4>Craft</h4>
+            <p>Polished visuals, solid code, and thoughtful UX—nothing leaves our hands half-finished.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="feature-icon" aria-hidden="true"><i class="fa fa-graduation-cap"></i></div>
+            <h4>Growth</h4>
+            <p>We invest in learners with structured feedback so skills compound with every project.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="feature-icon" aria-hidden="true"><i class="fa fa-bolt"></i></div>
+            <h4>Momentum</h4>
+            <p>Fast iteration where it matters, without cutting corners on quality or accessibility.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <!-- Leadership Section -->
     <section class="section" id="leadership" style="background: var(--bg-soft);">
       <div class="container">
@@ -151,113 +234,6 @@
         </div>
       </div>
     </section>
-    <!-- Page intro -->
-    <section class="about-page-hero" aria-labelledby="about-heading">
-      <div class="container about-page-hero-inner reveal">
-        <span class="eyebrow">Who we are</span>
-        <h1 id="about-heading">A digital studio and <span class="gradient-text">learning partner</span></h1>
-        <p>
-          GFix Digital brings together commercial creative work and practical training. We help organizations
-          show up with clarity online, and we help individuals build confident, job-ready skills through
-          real projects and guided mentorship.
-        </p>
-        <div class="about-page-hero-actions">
-          <a href="contact.html" class="btn btn-primary">Start a conversation</a>
-          <a href="team.html" class="btn btn-ghost">Meet our team</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Story -->
-    <section class="section about" id="about-story" aria-labelledby="story-heading">
-      <div class="container">
-        <div class="section-head reveal" style="max-width: 800px;">
-          <span class="eyebrow">Our story</span>
-          <h2 id="story-heading">Built for brands, <span class="gradient-text">rooted in education</span></h2>
-          <p>
-            From day one, our model has been simple: the same standards that power work for clients also
-            shape how we teach. Briefs, deadlines, and quality reviews are not classroom theory—they are part
-            of how we operate every week.
-          </p>
-          <p style="margin-top: 16px;">
-            That dual focus keeps our training relevant and our services sharp. Whether you need a campaign
-            asset, a site you can maintain, or a structured path into digital careers, you get a team that
-            cares about craft, communication, and outcomes.
-          </p>
-          <div class="stats" role="group" aria-label="Highlights" style="justify-content: center; margin-top: 36px;">
-            <div><strong>500+</strong><span>Learners supported</span></div>
-            <div><strong>200+</strong><span>Projects shipped</span></div>
-            <div><strong>50+</strong><span>Client partnerships</span></div>
-          </div>
-          <a href="services.html" class="btn btn-primary" style="margin-top: 36px;">Explore services</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Values -->
-    <section class="section" id="values" aria-labelledby="values-heading">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="eyebrow">What guides us</span>
-          <h2 id="values-heading">Principles we work <span class="gradient-text">by</span></h2>
-          <p>Clear expectations, honest timelines, and work you can stand behind—whether it ships to a client or becomes
-            part of a student portfolio.</p>
-        </div>
-        <div class="grid grid-4">
-          <article class="feature reveal">
-            <div class="feature-icon" aria-hidden="true"><i class="fa fa-link"></i></div>
-            <h4>Partnership</h4>
-            <p>We listen first, propose clearly, and stay accountable from kickoff through delivery.</p>
-          </article>
-          <article class="feature reveal">
-            <div class="feature-icon" aria-hidden="true"><i class="fa fa-diamond"></i></div>
-            <h4>Craft</h4>
-            <p>Polished visuals, solid code, and thoughtful UX—nothing leaves our hands half-finished.</p>
-          </article>
-          <article class="feature reveal">
-            <div class="feature-icon" aria-hidden="true"><i class="fa fa-graduation-cap"></i></div>
-            <h4>Growth</h4>
-            <p>We invest in learners with structured feedback so skills compound with every project.</p>
-          </article>
-          <article class="feature reveal">
-            <div class="feature-icon" aria-hidden="true"><i class="fa fa-bolt"></i></div>
-            <h4>Momentum</h4>
-            <p>Fast iteration where it matters, without cutting corners on quality or accessibility.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Good Partner Section -->
-    <section class="section" id="good-partner" style="background: var(--bg);">
-      <div class="container center reveal">
-        <span class="eyebrow">Proudly Partnered</span>
-        <h2>Our Good <span class="gradient-text">Partners</span></h2>
-        <div class="partners-grid"
-          style="margin-top: 40px; display: flex; flex-wrap: wrap; justify-content: center; gap: 40px;">
-          <div class="partner-item" style="display:flex; flex-direction:column; align-items:center; gap:14px;">
-            <a href="https://www.facebook.com/share/1D7JwAQKrp/" target="_blank" rel="noopener noreferrer">
-              <img src="./assets/Pictures/meherlogo.jpeg" alt="Meher Partner Logo"
-                style="max-width: 180px; border-radius: 12px; box-shadow: var(--shadow-md); transition: transform .3s;"
-                onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-            </a>
-            <a href="https://www.facebook.com/share/1D7JwAQKrp/" class="btn btn-primary" target="_blank"
-              rel="noopener noreferrer">Visit Partner →</a>
-          </div>
-          <div class="partner-item" style="display:flex; flex-direction:column; align-items:center; gap:14px;">
-            <a href="https://www.facebook.com/share/1KLrTEduAZ/" target="_blank" rel="noopener noreferrer">
-              <img src="./assets/Pictures/mepa.jpeg" alt="MEPA Logo"
-                style="max-width: 180px; border-radius: 12px; box-shadow: var(--shadow-md); transition: transform .3s;"
-                onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-            </a>
-            <a href="https://www.facebook.com/share/1KLrTEduAZ/" class="btn btn-primary" target="_blank"
-              rel="noopener noreferrer">Visit MEPA →</a>
-          </div>
-        </div>
-        <p style="max-width: 600px; margin: 24px auto 0;">We collaborate with industry leaders to bring the best value
-          to our clients and students.</p>
-      </div>
-    </section>
 
     <!-- How we work -->
     <section class="section" id="how-we-work" aria-labelledby="process-heading">
@@ -324,18 +300,22 @@
       <div>
         <h5>Company</h5>
         <ul>
+          <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="courses.html">Training</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
       <div>
         <h5>Services</h5>
         <ul>
-          <li><a href="services.html">Video editing</a></li>
-          <li><a href="services.html">Graphic design</a></li>
-          <li><a href="services.html">Web development</a></li>
-          <li><a href="courses.html">ICT training</a></li>
+          <li><a href="#">ICT Training</a></li>
+          <li><a href="#">Digital Marketing</a></li>
+          <li><a href="#">Graphic Designing</a></li>
+          <li><a href="#">Video Editing</a></li>
+          <li><a href="#">Web Development</a></li>
         </ul>
       </div>
       <div>
