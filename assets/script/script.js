@@ -84,12 +84,12 @@ document.addEventListener('DOMContentLoaded', () => {
 const COURSES = [
   {
     title: "ICT - Information & Communication Technology",
-    category: "technology",
+    category: "Fundamental of Computer",
     thumb: "ict",
     image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=800",
     short: "Professional course from basic computer to advanced research & reporting.",
     desc: "Professional course covering everything from basic computer to advanced research and reporting.",
-    duration: "60 Classes",
+    duration: "40 Classes",
     level: "Complete Course",
     price: "",
     learn: [
@@ -106,8 +106,8 @@ const COURSES = [
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800",
     short: "Basic to advanced digital ecosystem understanding.",
     desc: "Special course designed for complete digital ecosystem understanding.",
-    duration: "Classes (Basic → Advanced)",
-    level: "Basic to Advanced",
+    duration: "Duration:",
+    level: "26 Special Classes",
     price: "",
     learn: [
       "Social Media Marketing Fundamentals",
@@ -123,8 +123,8 @@ const COURSES = [
     image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&q=80&w=800",
     short: "Industry-standard tools + practical design projects.",
     desc: "Special focused classes covering industry-standard tools.",
-    duration: "Special Classes",
-    level: "Skill Course",
+    duration: "Duration:",
+    level: "26 Special Classes",
     price: "",
     learn: [
       "Adobe Illustrator",
