@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | GFix Digital</title>
+  <meta name="description"
+    content="Get in touch with GFix Digital for premium video editing, graphic design, web development, and ICT training.">
+  <link rel="icon" href="./assets/Pictures/GFix digital Logo wth rectangle shape.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="stylesheet" href="./assets/fa-5/css/font-awesome.min.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">
+        <img src="./assets/Pictures/Logo 2.png" alt="GFix Digital Logo">
+      </a>
+      <a href="index.html" class="logo2">GFix<span>Digital</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html"><i class="fa fa-home"></i> Home</a>
+        <div class="nav-dropdown">
+          <a href="services.html" class="nav-dropdown-toggle"><i class="fa fa-cogs"></i> Services <i
+              class="fa fa-chevron-down nav-chevron"></i></a>
+          <div class="nav-dropdown-menu">
+            <a href="courses.html"><i class="fa fa-graduation-cap"></i> Training</a>
+          </div>
+        </div>
+        <a href="projects.html"><i class="fa fa-briefcase"></i> Projects</a>
+        <a href="team.html"><i class="fa fa-users"></i> Team</a>
+        <a href="about.html"><i class="fa fa-info-circle"></i> About</a>
+        <a href="contact.html" class="nav-cta"><i class="fa fa-envelope"></i> Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="contact-page">
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Contact Us</span>
+          <h1>Let's Create <span class="gradient-text">Future</span> Together</h1>
+          <p>Have a project in mind or want to join our training? We're here to help.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info-panel reveal">
+            <div class="info-item">
+              <div class="info-icon"><i class="fa fa-envelope"></i></div>
+              <div class="info-content">
+                <h3>Email Us</h3>
+                <p><a href="mailto:gfixdigital@gmail.com">gfixdigital@gmail.com</a></p>
+                <p>We reply within 24 hours.</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="fa fa-phone"></i></div>
+              <div class="info-content">
+                <h3>Call Us</h3>
+                <p>+92 336 5842012</p>
+                <p>+92 301 3021311</p>
+                <p>Mon - Sat, 9am - 6pm</p>
+              </div>
+            </div>
+
+            <div class="social-panel">
+              <h3>Connect With Us</h3>
+              <div class="social-links-large">
+                <a href="https://facebook.com/gfixdigital" target="_blank" rel="noopener noreferrer"
+                  aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+                <a href="https://instagram.com/gfixdigital" target="_blank" rel="noopener noreferrer"
+                  aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+                <a href="https://linkedin.com/company/gfixdigital" target="_blank" rel="noopener noreferrer"
+                  aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                <a href="https://twitter.com/gfixdigital" target="_blank" rel="noopener noreferrer"
+                  aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+                <a href="https://wa.me/923365842012" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i
+                    class="fa fa-whatsapp"></i></a>
+                <a href="https://wa.me/92013021311" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i
+                    class="fa fa-whatsapp"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-panel reveal">
+            <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+              <input type="hidden" name="access_key" value="0018a1a2-944a-4d2b-9273-faaf5c829e7c">
+              <input type="hidden" name="subject" value="New Contact Form Submission">
+              <input type="checkbox" name="botcheck" id="" style="display: none;">
+
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="name">Full Name</label>
+                  <input type="text" id="name" name="name" placeholder="Asim" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="interest">I'm interested in</label>
+                <select id="interest" name="interest" required>
+                  <option value="" disabled selected>Select an option</option>
+                  <option value="Training/Courses">Training/Courses</option>
+                  <option value="Video Editing">Video Editing</option>
+                  <option value="Graphic Design">Graphic Design</option>
+                  <option value="Web Development">Web Development</option>
+                  <option value="Digital Marketing">Digital Marketing</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell us about your project or inquiry..."
+                  required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Send
+                Message</button>
+              <div id="formStatus" class="form-status"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map or Location Section -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container reveal">
+        <div class="location-card">
+          <div class="location-info">
+            <div class="info-icon"><i class="fa fa-map-marker"></i></div>
+            <div>
+              <h3>Our Location</h3>
+              <p>Globalize your vision with GFix Digital.</p>
+              <p>Swat, KPK, Pakistan</p>
+            </div>
+          </div>
+          <div class="location-map" aria-label="Google map location">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.689666443173!2d72.38593887743815!3d34.75977913594074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dc22b64bb3a4e9%3A0xa4b234bf5e20c97c!2sSwat%20Mingora%2C%20Swat%2C%20Pakistan!5e0!3m2!1sen!2s!4v1778054556738!5m2!1sen!2s"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="logo">
+          <img src="./assets/Pictures/Logo 2 White.png" alt="GFix Digital Logo">
+        </a>
+        <a href="index.html" class="logo logo-light"><span>The Digital Hub</span></a>
+        <p class="footer-about">Premium digital agency & training hub crafting excellence since day one.</p>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="courses.html">Training</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#">Video Editing</a></li>
+          <li><a href="#">Graphic Design</a></li>
+          <li><a href="#">Web Development</a></li>
+          <li><a href="#">ICT Training</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul class="contact-link">
+          <li><a href="mailto:gfixdigital@gmail.com"><i class="fa fa-envelope"></i>gfixdigital@gmail.com</a></li>
+          <li><i class="fa fa-phone"></i>+92 336 5842012</li>
+          <li><i class="fa fa-phone"></i>+92 301 3021311</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© <span id="year"></span> GFix Digital. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/script/script.js"></script>
+</body>
+
+</html>

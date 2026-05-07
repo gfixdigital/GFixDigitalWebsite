@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Training Programs — GFix Digital</title>
+  <meta name="description"
+    content="Enroll in GFix Digital's premium training programs. Expert-led courses in ICT, Python, Graphic Design, Video Editing, Digital Marketing & more." />
+  <link rel="icon" href="./assets/Pictures/GFix digital Logo wth rectangle shape.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <link rel="stylesheet" href="./assets/fa-5/css/font-awesome.min.css" />
+</head>
+
+<body>
+
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-ring"></div>
+    <div class="loader-brand">Gfix<span>.</span></div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">
+        <img src="./assets/Pictures/Logo 2.png" alt="GFix Digital Logo">
+      </a>
+      <a href="index.html" class="logo2">Gfix<span>Digital</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html"><i class="fa fa-home"></i> Home</a>
+        <div class="nav-dropdown">
+          <a href="services.html" class="nav-dropdown-toggle"><i class="fa fa-cogs"></i> Services <i
+              class="fa fa-chevron-down nav-chevron"></i></a>
+          <div class="nav-dropdown-menu">
+            <a href="courses.html"><i class="fa fa-graduation-cap"></i> Training</a>
+          </div>
+        </div>
+        <a href="projects.html"><i class="fa fa-briefcase"></i> Projects</a>
+        <a href="team.html"><i class="fa fa-users"></i> Team</a>
+        <a href="about.html"><i class="fa fa-info-circle"></i> About</a>
+        <a href="contact.html" class="nav-cta"><i class="fa fa-envelope"></i> Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Courses -->
+  <section class="section" id="courses">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">GFix Digital</span>
+        <h2>Training <span class="gradient-text">Programs</span></h2>
+        <p>Project-based trainings designed to make you job-ready.</p>
+      </div>
+      <div class="grid grid-3" id="coursesGrid"></div>
+      <div class="center reveal" style="margin-top:48px">
+        <button type="button" class="btn btn-outline" id="viewAllCoursesBtn">View All Courses →</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose -->
+  <section class="section" id="why-choose" style="background: var(--bg-soft); padding-top: 0;">
+    <div class="container">
+      <div class="section-head reveal" style="margin-top: 0;">
+        <span class="eyebrow">Why Choose</span>
+        <h2>Why Choose GFix Digital <span class="gradient-text">Trainings</span>?</h2>
+        <p>We focus on real skills, real mentorship, and real outcomes.</p>
+      </div>
+      <div class="grid grid-3">
+        <article class="card reveal">
+          <h3 style="font-size: 1.1rem; margin-bottom: 10px;">1. 100% Project-Based</h3>
+          <p style="color: var(--muted);">Learn by doing real projects, not just theory.</p>
+        </article>
+        <article class="card reveal">
+          <h3 style="font-size: 1.1rem; margin-bottom: 10px;">2. Industry Expert Trainers</h3>
+          <p style="color: var(--muted);">Taught by <strong>Founder &amp; CEO Muhammad Abbas</strong> and professionals
+            with market experience.</p>
+        </article>
+        <article class="card reveal">
+          <h3 style="font-size: 1.1rem; margin-bottom: 10px;">3. Small Batches, Personal Attention</h3>
+          <p style="color: var(--muted);">Limited seats. Get one-on-one feedback in every class.</p>
+        </article>
+        <article class="card reveal">
+          <h3 style="font-size: 1.1rem; margin-bottom: 10px;">4. Verified Certificate + Recommendation Letter</h3>
+          <p style="color: var(--muted);">Get a <strong>GFix Digital verified certificate</strong>. Top performers get
+            an
+            LOR for jobs.</p>
+        </article>
+        <article class="card reveal">
+          <h3 style="font-size: 1.1rem; margin-bottom: 10px;">5. Free Freelancing Support</h3>
+          <p style="color: var(--muted);">Complete any skill course &amp; get <strong>free Freelancing classes</strong>
+            to
+            start earning online.</p>
+        </article>
+        <article class="card reveal">
+          <h3 style="font-size: 1.1rem; margin-bottom: 10px;">6. Lifetime Alumni Community Access</h3>
+          <p style="color: var(--muted);">Join our alumni group for lifetime support, jobs, and opportunities.</p>
+        </article>
+        <article class="card reveal">
+          <h3 style="font-size: 1.1rem; margin-bottom: 10px;">7. Flexible Timing</h3>
+          <p style="color: var(--muted);">All classes on <strong>weekend nights</strong>. Perfect for students &amp; job
+            holders.</p>
+        </article>
+        <article class="card reveal">
+          <h3 style="font-size: 1.1rem; margin-bottom: 10px;">8. Very Affordable Fees</h3>
+          <p style="color: var(--muted);">Quality training at the lowest possible cost. Skills for everyone.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Course Detail Modal -->
+  <div class="modal" id="courseModal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+    <div class="modal-backdrop" id="courseModalBackdrop"></div>
+    <div class="modal-card" role="document">
+      <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+      <div class="modal-image-wrap">
+        <img id="modalCourseImage" src="" alt="Course" class="modal-course-img">
+      </div>
+      <div class="modal-body">
+        <span class="eyebrow" id="modalCategory">Course</span>
+        <h3 id="modalTitle">Course Title</h3>
+        <p id="modalDesc">Course description.</p>
+        <div class="modal-meta">
+          <div><strong id="modalDuration">—</strong><span>Duration</span></div>
+          <div><strong id="modalLevel">—</strong><span>Level</span></div>
+        </div>
+        <h4 class="modal-subhead">What you'll learn</h4>
+        <ul class="modal-list" id="modalList"></ul>
+        <button type="button" class="btn btn-primary" id="modalEnrollBtn">Enroll Now →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== ENROLLMENT MODAL ===== -->
+  <div class="enroll-modal" id="enrollModal" aria-hidden="true" role="dialog" aria-labelledby="enrollModalTitle">
+    <div class="enroll-backdrop" id="enrollBackdrop"></div>
+
+    <div class="enroll-panel form-only" role="document">
+
+      <!-- Right form panel -->
+      <div class="enroll-form-panel">
+        <button class="enroll-close" id="enrollClose" aria-label="Close modal">
+          <i class="fa fa-times"></i>
+        </button>
+
+        <!-- Progress -->
+        <div class="enroll-progress-wrap">
+          <div class="enroll-step-labels">
+            <span class="enroll-step-label active" data-for="1">Details</span>
+            <span class="enroll-step-label" data-for="2">Program</span>
+            <span class="enroll-step-label" data-for="3">Confirm</span>
+          </div>
+          <div class="enroll-progress-track">
+            <div class="enroll-progress-bar" id="enrollProgressBar"></div>
+          </div>
+        </div>
+
+        <form id="multiStepEnrollForm" novalidate>
+          <input type="checkbox" name="botcheck" style="display:none;" tabindex="-1" autocomplete="off">
+
+          <!-- ── STEP 1 : Personal Details ── -->
+          <div class="e-step active" data-step="1">
+            <div class="e-step-head">
+              <span class="e-step-number">01</span>
+              <div>
+                <h3>Personal Details</h3>
+                <p>Let's start with who you are.</p>
+              </div>
+            </div>
+
+            <div class="e-fields">
+              <div class="e-field">
+                <label for="ef_name">Full Name <abbr title="required">*</abbr></label>
+                <input id="ef_name" type="text" name="full_name" required autocomplete="name"
+                  placeholder="e.g. Adnan khan">
+                <span class="e-field-error">Please enter your full name.</span>
+              </div>
+
+              <div class="e-field-row">
+                <div class="e-field">
+                  <label for="ef_whatsapp">WhatsApp <abbr title="required">*</abbr></label>
+                  <input id="ef_whatsapp" type="tel" name="whatsapp" required autocomplete="tel"
+                    placeholder="+92 3xx xxxxxxx">
+                  <span class="e-field-error">Enter a valid WhatsApp number.</span>
+                </div>
+                <div class="e-field">
+                  <label for="ef_email">Email <abbr title="required">*</abbr></label>
+                  <input id="ef_email" type="email" name="email" required autocomplete="email"
+                    placeholder="your@email.com">
+                  <span class="e-field-error">Enter a valid email address.</span>
+                </div>
+              </div>
+
+              <div class="e-field-row">
+                <div class="e-field">
+                  <label for="ef_city">City / Country <abbr title="required">*</abbr></label>
+                  <input id="ef_city" type="text" name="city_country" required placeholder="e.g. Swat, Pakistan">
+                  <span class="e-field-error">Please enter your city.</span>
+                </div>
+                <div class="e-field">
+                  <label for="ef_edu">Education Level <abbr title="required">*</abbr></label>
+                  <input id="ef_edu" type="text" name="education" required placeholder="e.g. Intermediate">
+                  <span class="e-field-error">Please enter your education.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── STEP 2 : Program Info ── -->
+          <div class="e-step" data-step="2">
+            <div class="e-step-head">
+              <span class="e-step-number">02</span>
+              <div>
+                <h3>Your Learning Path</h3>
+                <p>Help us tailor the program to you.</p>
+              </div>
+            </div>
+
+            <div class="e-fields">
+              <div class="e-field">
+                <label for="enrollProgramSelect">Selected Program <abbr title="required">*</abbr></label>
+                <div class="e-select-wrap">
+                  <select id="enrollProgramSelect" name="program" required>
+                    <option value="">Choose a program…</option>
+                    <option value="ICT (Computer Basics)">ICT — Computer Basics</option>
+                    <option value="Python Programming">Python Programming</option>
+                    <option value="Graphic Designing">Graphic Designing</option>
+                    <option value="Video Editing">Video Editing</option>
+                    <option value="Digital Marketing">Digital Marketing</option>
+                    <option value="Freelancing">Freelancing</option>
+                    <option value="Soft Skills Development">Soft Skills Development</option>
+                    <option value="Islamic Studies (Arabic Language)">Islamic Studies — Arabic</option>
+                  </select>
+                  <i class="fa fa-chevron-down"></i>
+                </div>
+                <span class="e-field-error">Please select a program.</span>
+              </div>
+
+              <div class="e-pill-group">
+                <label class="e-pill-label">Prior Knowledge in this field? <abbr title="required">*</abbr></label>
+                <div class="e-pills" role="radiogroup">
+                  <label class="e-pill"><input type="radio" name="prior_knowledge" value="Yes"
+                      required><span>Yes</span></label>
+                  <label class="e-pill"><input type="radio" name="prior_knowledge" value="No"><span>No</span></label>
+                </div>
+                <span class="e-field-error">Please select an option.</span>
+              </div>
+
+              <div class="e-pill-group">
+                <label class="e-pill-label">Understand this is a paid structured program? <abbr
+                    title="required">*</abbr></label>
+                <div class="e-pills" role="radiogroup">
+                  <label class="e-pill"><input type="radio" name="structured_program" value="Yes" required><span>Yes, I
+                      understand</span></label>
+                  <label class="e-pill"><input type="radio" name="structured_program" value="No"><span>Not
+                      sure</span></label>
+                </div>
+                <span class="e-field-error">Please confirm your understanding.</span>
+              </div>
+
+              <div class="e-field">
+                <label for="ef_reason">Why do you want to join? <abbr title="required">*</abbr></label>
+                <textarea id="ef_reason" name="reason" rows="3" required
+                  placeholder="Share your goals and motivation…"></textarea>
+                <span class="e-field-error">Please share your motivation.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── STEP 3 : Commitment ── -->
+          <div class="e-step" data-step="3">
+            <div class="e-step-head">
+              <span class="e-step-number">03</span>
+              <div>
+                <h3>Final Commitment</h3>
+                <p>Almost there — just confirm a few things.</p>
+              </div>
+            </div>
+
+            <div class="e-fields">
+              <div class="e-notice">
+                <i class="fa fa-info-circle"></i>
+                <p>Attendance is <strong>mandatory</strong>. GFix Digital does not offer repeat sessions for missed
+                  classes. Please ensure you can commit before enrolling.</p>
+              </div>
+
+              <div class="e-pill-group">
+                <label class="e-pill-label">Can you attend online classes regularly? <abbr
+                    title="required">*</abbr></label>
+                <div class="e-pills" role="radiogroup">
+                  <label class="e-pill"><input type="radio" name="attendance_confirm" value="Yes" required><span>Yes, I
+                      can commit</span></label>
+                  <label class="e-pill"><input type="radio" name="attendance_confirm" value="No"><span>I'm not
+                      sure</span></label>
+                </div>
+                <span class="e-field-error">Please confirm your attendance.</span>
+              </div>
+
+              <div class="e-pill-group">
+                <label class="e-pill-label">Preferred class duration <abbr title="required">*</abbr></label>
+                <div class="e-pills" role="radiogroup">
+                  <label class="e-pill"><input type="radio" name="duration" value="1 hr" required><span>1
+                      Hour</span></label>
+                  <label class="e-pill"><input type="radio" name="duration" value="1.5 hrs"><span>1.5
+                      Hours</span></label>
+                </div>
+                <span class="e-field-error">Please select a duration.</span>
+              </div>
+
+              <div class="e-checkbox-wrap">
+                <label class="e-checkbox">
+                  <input type="checkbox" name="agreement" id="agree_terms" required>
+                  <span class="e-checkbox-box"><i class="fa fa-check"></i></span>
+                  <span class="e-checkbox-text">I agree to GFix Digital's <a href="terms.html" target="_blank">Terms,
+                      Ethics
+                      &amp; Professional Agreement</a></span>
+                </label>
+                <span class="e-field-error">You must agree to continue.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Footer nav -->
+          <div class="e-footer">
+            <button type="button" class="e-btn-back" id="enrollPrev">
+              <i class="fa fa-arrow-left"></i> Back
+            </button>
+            <button type="button" class="e-btn-next" id="enrollNext">
+              Continue <i class="fa fa-arrow-right"></i>
+            </button>
+            <button type="submit" class="e-btn-submit" id="enrollSubmit">
+              <span class="btn-text"><i class="fa fa-paper-plane"></i> Complete Enrollment</span>
+              <span class="btn-spinner" style="display:none;"><i class="fa fa-spinner fa-spin"></i> Submitting…</span>
+            </button>
+          </div>
+
+          <div id="enroll-status" class="e-status" role="alert" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-cta">
+      <div class="container footer-cta-inner">
+        <div>
+          <h3>Start Your Digital Journey Today</h3>
+          <p>Join learners and businesses building their future with GFix Digital.</p>
+        </div>
+        <a href="contact.html" class="btn footer-cta-btn">Join Now &rarr;</a>
+      </div>
+    </div>
+    <div class="container footer-grid">
+      <div class="footer-brand-col">
+        <a href="index.html" class="logo"><img src="./assets/Pictures/Logo 2 White.png" alt="GFix Digital Logo"></a>
+        <a href="index.html" class="logo logo-light"><span>The Digital Hub</span></a>
+        <p class="footer-about">GFix Digital is a complete digital solutions and training hub, helping businesses grow
+          and individuals build skills through modern technology, services, and practical learning.</p>
+        <p class="footer-tagline">"Building Digital Solutions, Skills, and Opportunities for the Future."</p>
+        <div class="social-links">
+          <a href="https://facebook.com/gfixdigital" class="social-link" aria-label="Facebook" target="_blank"
+            rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+              fill="currentColor">
+              <path
+                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+            </svg></a>
+          <a href="https://instagram.com/gfixdigital" class="social-link" aria-label="Instagram" target="_blank"
+            rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+              fill="currentColor">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+            </svg></a>
+          <a href="https://tiktok.com/@gfixdigital" class="social-link" aria-label="TikTok" target="_blank"
+            rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+              fill="currentColor">
+              <path
+                d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
+            </svg></a>
+          <a href="https://twitter.com/gfixdigital" class="social-link" aria-label="X (Twitter)" target="_blank"
+            rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+              fill="currentColor">
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+            </svg></a>
+          <a href="https://linkedin.com/company/gfixdigital" class="social-link" aria-label="LinkedIn" target="_blank"
+            rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+              fill="currentColor">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg></a>
+        </div>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="courses.html">Training</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Services</h5>
+        <ul>
+          <li><a href="services.html">Graphic Designing</a></li>
+          <li><a href="services.html">Video Editing</a></li>
+          <li><a href="services.html">Web Development</a></li>
+          <li><a href="services.html">Digital Marketing</a></li>
+          <li><a href="courses.html">Digital Skills Training</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul class="contact-link">
+          <li><a href="mailto:gfixdigital@gmail.com"><i class="fa fa-envelope"></i>gfixdigital@gmail.com</a></li>
+          <li><i class="fa fa-phone"></i>+92 336 5842012</li>
+          <li><i class="fa fa-phone"></i>+92 301 3021311</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">&copy; <span id="year"></span> GFix Digital. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="./assets/script/script.js"></script>
+</body>
+
+</html>
