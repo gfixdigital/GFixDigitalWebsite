@@ -49,13 +49,19 @@ document.addEventListener('DOMContentLoaded', () => {
     navLinks.querySelectorAll('.nav-dropdown-toggle').forEach(toggle => {
       toggle.addEventListener('click', (e) => {
         if (window.innerWidth <= 820) {
-          e.preventDefault();
           const parent = toggle.closest('.nav-dropdown');
           const isOpen = parent.classList.contains('open');
+          // If dropdown is already open, allow navigation to the page
+          if (isOpen) {
+            // Let the default navigation happen (don't prevent default)
+            return;
+          }
+          // If dropdown is closed, prevent navigation and open dropdown
+          e.preventDefault();
           // Close siblings
           navLinks.querySelectorAll('.nav-dropdown').forEach(dd => dd.classList.remove('open'));
           navLinks.querySelectorAll('.nav-subdropdown').forEach(dd => dd.classList.remove('open'));
-          if (!isOpen) parent.classList.add('open');
+          parent.classList.add('open');
         }
       });
     });
