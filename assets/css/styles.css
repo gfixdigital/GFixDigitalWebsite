@@ -354,14 +354,6 @@ img {
   flex-shrink: 0;
 }
 
-/* Ensure fa-link icon displays properly */
-.nav-dropdown-menu a .fa-link {
-  display: inline-block !important;
-  width: 18px;
-  text-align: center;
-  color: var(--blue-1);
-}
-
 /* ============ Nav Sub Dropdown (Services -> Training) ============ */
 .nav-subdropdown {
   position: relative;
@@ -3637,16 +3629,6 @@ body.modal-open {
     padding: 10px 6px;
     border-radius: 0;
     border-bottom: 1px solid rgba(0, 0, 0, .04);
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .nav-dropdown-menu a i {
-    display: inline-block !important;
-    width: 18px;
-    text-align: center;
-    color: var(--blue-1);
   }
 
   .nav-dropdown-menu a:last-child {

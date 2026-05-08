@@ -23,6 +23,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // Blur dropdown toggles when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.nav-dropdown')) {
+      navLinks.querySelectorAll('.nav-dropdown-toggle').forEach(toggle => toggle.blur());
+    }
+  });
+
   // Mobile Menu
   if (hamburger && navLinks) {
     hamburger.addEventListener('click', () => {
@@ -45,6 +52,13 @@ document.addEventListener('DOMContentLoaded', () => {
         navLinks.querySelectorAll('.nav-subdropdown').forEach(dd => dd.classList.remove('open'));
       });
     });
+
+    // Blur dropdown menu items on click to remove focus state
+    navLinks.querySelectorAll('.nav-dropdown-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        link.blur();
+      });
+    });
     // Mobile dropdown toggle — only on small screens
     navLinks.querySelectorAll('.nav-dropdown-toggle').forEach(toggle => {
       toggle.addEventListener('click', (e) => {
@@ -54,6 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
           // If dropdown is already open, allow navigation to the page
           if (isOpen) {
             // Let the default navigation happen (don't prevent default)
+            toggle.blur();
             return;
           }
           // If dropdown is closed, prevent navigation and open dropdown
@@ -62,6 +77,9 @@ document.addEventListener('DOMContentLoaded', () => {
           navLinks.querySelectorAll('.nav-dropdown').forEach(dd => dd.classList.remove('open'));
           navLinks.querySelectorAll('.nav-subdropdown').forEach(dd => dd.classList.remove('open'));
           parent.classList.add('open');
+        } else {
+          // On desktop, blur the toggle after click to remove focus outline
+          toggle.blur();
         }
       });
     });
