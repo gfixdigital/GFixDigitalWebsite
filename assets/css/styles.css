@@ -1741,6 +1741,11 @@ img {
   transition: transform .6s var(--t);
 }
 
+.service-card-img.ai-img {
+  object-fit: cover;
+  object-position: center 60%;
+}
+
 .service-card-body {
   padding: 30px 28px;
   display: flex;
