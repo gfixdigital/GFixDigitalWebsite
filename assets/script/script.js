@@ -36,6 +36,14 @@ document.addEventListener('DOMContentLoaded', () => {
       hamburger.classList.toggle('active');
       navLinks.classList.toggle('active');
       navLinks.classList.toggle('open');
+      
+      // Lock/unlock body scroll
+      if (navLinks.classList.contains('open')) {
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.style.overflow = '';
+      }
+      
       // Close all dropdowns when hamburger closes
       if (!navLinks.classList.contains('open')) {
         navLinks.querySelectorAll('.nav-dropdown').forEach(dd => dd.classList.remove('open'));
@@ -48,6 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
         hamburger.classList.remove('active');
         navLinks.classList.remove('active');
         navLinks.classList.remove('open');
+        document.body.style.overflow = '';
         navLinks.querySelectorAll('.nav-dropdown').forEach(dd => dd.classList.remove('open'));
         navLinks.querySelectorAll('.nav-subdropdown').forEach(dd => dd.classList.remove('open'));
       });
@@ -491,10 +500,19 @@ if (starRating && fbRating) {
   stars.forEach(star => {
     star.addEventListener('click', () => {
       const val = parseInt(star.dataset.value);
-      fbRating.value = val;
-      stars.forEach(s => {
-        s.classList.toggle('active', parseInt(s.dataset.value) <= val);
-      });
+      const current = parseInt(fbRating.value);
+      
+      if (current === val) {
+        fbRating.value = 0;
+        stars.forEach(s => {
+          s.classList.remove('active');
+        });
+      } else {
+        fbRating.value = val;
+        stars.forEach(s => {
+          s.classList.toggle('active', parseInt(s.dataset.value) <= val);
+        });
+      }
     });
     star.addEventListener('mouseenter', () => {
       const val = parseInt(star.dataset.value);
