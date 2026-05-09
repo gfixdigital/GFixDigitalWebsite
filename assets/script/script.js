@@ -506,6 +506,7 @@ if (starRating && fbRating) {
         fbRating.value = 0;
         stars.forEach(s => {
           s.classList.remove('active');
+          s.classList.remove('hover');
         });
       } else {
         fbRating.value = val;
