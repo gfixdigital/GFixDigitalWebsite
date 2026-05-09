@@ -685,6 +685,84 @@ handleFormSubmit('multiStepServiceForm', 'serviceStatus', 'Request submitted suc
   });
 })();
 
+// ============ AI Tools Modal Logic ============
+handleFormSubmit('aiToolsForm', 'aiStatus', 'Inquiry sent! We will contact you on WhatsApp with access details.');
+
+(function initAIModal() {
+  const modal = document.getElementById('aiModal');
+  const form = document.getElementById('aiToolsForm');
+  if (!modal || !form) return;
+
+  const steps = form.querySelectorAll('.e-step');
+  const labels = modal.querySelectorAll('.enroll-step-label');
+  const progress = document.getElementById('aiProgressBar');
+  const backDrop = document.getElementById('aiBackdrop');
+  const closeBtn = document.getElementById('aiClose');
+
+  let currStep = 1;
+
+  window.openAIModal = function () {
+    currStep = 1;
+    update();
+    form.reset();
+    modal.classList.add('is-open');
+    document.body.classList.add('modal-open');
+  };
+
+  function closeModal() {
+    modal.classList.remove('is-open');
+    document.body.classList.remove('modal-open');
+  }
+
+  if (backDrop) backDrop.addEventListener('click', closeModal);
+  if (closeBtn) closeBtn.addEventListener('click', closeModal);
+
+  function update() {
+    steps.forEach(s => s.classList.toggle('active', parseInt(s.dataset.step) === currStep));
+    labels.forEach(l => l.classList.toggle('active', parseInt(l.dataset.for) <= currStep));
+    if (progress) progress.style.width = `${(currStep / steps.length) * 100}%`;
+  }
+
+  function validate(stepNum) {
+    const stepEl = form.querySelector(`.e-step[data-step="${stepNum}"]`);
+    if (!stepEl) return true;
+    let valid = true;
+    stepEl.querySelectorAll('input[required], select[required], textarea[required]').forEach(input => {
+      let wrapper = input.closest('.e-field') || input.closest('.e-pill-group') || input.closest('.e-checkbox-wrap');
+      if (!wrapper) return;
+      if (input.type === 'radio' || input.type === 'checkbox') {
+        const name = input.name;
+        if (!stepEl.querySelector(`input[name="${name}"]:checked`)) {
+          wrapper.classList.add('has-error');
+          setTimeout(() => wrapper.classList.remove('has-error'), 1000);
+          valid = false;
+        }
+      } else if (!input.value.trim()) {
+        wrapper.classList.add('has-error');
+        setTimeout(() => wrapper.classList.remove('has-error'), 1000);
+        valid = false;
+      }
+    });
+    return valid;
+  }
+
+  form.querySelectorAll('.e-btn-next').forEach(btn => {
+    btn.addEventListener('click', () => {
+      if (validate(currStep)) {
+        currStep++;
+        update();
+      }
+    });
+  });
+
+  form.querySelectorAll('.e-btn-back').forEach(btn => {
+    btn.addEventListener('click', () => {
+      currStep--;
+      update();
+    });
+  });
+})();
+
 // ============ URL Parameter Handling for Deep Linking ============
 document.addEventListener('DOMContentLoaded', () => {
   const urlParams = new URLSearchParams(window.location.search);
