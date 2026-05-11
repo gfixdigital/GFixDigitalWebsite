@@ -40,6 +40,17 @@
       }
     })();
   </script>
+
+    <script>
+        (function() {
+            const v = '1.0.1';
+            if(localStorage.getItem('gfix_v') !== v) {
+                localStorage.clear();
+                sessionStorage.clear();
+                localStorage.setItem('gfix_v', v);
+            }
+        })();
+    </script>
 </head>
 
 <body>

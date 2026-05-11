@@ -13,8 +13,19 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Poppins:wght@300;400;500;600&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/styles.css" />
-  <link rel="stylesheet" href="./assets/fa-5/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="./assets/css/styles.css?v=1.0.1" />
+  <link rel="stylesheet" href="./assets/fa-5/css/font-awesome.min.css?v=1.0.1" />
+
+    <script>
+        (function() {
+            const v = '1.0.1';
+            if(localStorage.getItem('gfix_v') !== v) {
+                localStorage.clear();
+                sessionStorage.clear();
+                localStorage.setItem('gfix_v', v);
+            }
+        })();
+    </script>
 </head>
 
 <body>
@@ -412,7 +423,7 @@
     </div>
   </footer>
 
-  <script src="./assets/script/script.js"></script>
+  <script src="./assets/script/script.js?v=1.0.1"></script>
 </body>
 
 </html>
