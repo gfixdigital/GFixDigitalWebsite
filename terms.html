@@ -12,8 +12,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Poppins:wght@300;400;500;600&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/styles.css" />
-  <link rel="stylesheet" href="./assets/fa-5/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="./assets/css/styles.css?v=1.0.1" />
+  <link rel="stylesheet" href="./assets/fa-5/css/font-awesome.min.css?v=1.0.1" />
   <style>
     .terms-hero {
       padding: 160px 0 60px;
@@ -127,6 +127,17 @@
       text-align: center;
     }
   </style>
+
+    <script>
+        (function() {
+            const v = '1.0.1';
+            if(localStorage.getItem('gfix_v') !== v) {
+                localStorage.clear();
+                sessionStorage.clear();
+                localStorage.setItem('gfix_v', v);
+            }
+        })();
+    </script>
 </head>
 
 <body>
@@ -157,7 +168,7 @@
           <a href="projects.html" class="nav-dropdown-toggle"><i class="fa fa-briefcase"></i> Projects <i
               class="fa fa-chevron-down nav-chevron"></i></a>
           <div class="nav-dropdown-menu">
-            <a href="projects.html#good-partner"><i class="fa fa-handshake-o"></i> Partners</a>
+            <a href="projects.html#good-partner"><i class="fa fa-handshake-o"></i> Good Partners</a>
           </div>
         </div>
         <a href="team.html"><i class="fa fa-users"></i> Team</a>
@@ -315,7 +326,7 @@
     </div>
   </footer>
 
-  <script src="./assets/script/script.js"></script>
+  <script src="./assets/script/script.js?v=1.0.1"></script>
 </body>
 
 </html>

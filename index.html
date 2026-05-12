@@ -8,14 +8,38 @@
   <meta name="description"
     content="Gfix Digital is a premium digital agency offering video editing, graphic design, web development, and ICT training." />
   <link rel="icon" href="./assets/Pictures/GFix digital Logo wth rectangle shape.png">
+  <!-- Cache Busting & Performance -->
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  <link rel="dns-prefetch" href="https://images.unsplash.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
+  <!-- Non-blocking font load -->
+  <link rel="preload" as="style"
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Poppins:wght@300;400;500;600&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/styles.css" />
-  <link rel="stylesheet" href="./assets/fa-5/css/font-awesome.min.css" />
-  <link rel="shortcut icon" href="./assets/Pictures/GFix digital Logo wth rectangle shape.png" type="image/x-icon">
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Poppins:wght@300;400;500;600&display=swap">
+  </noscript>
+  <link rel="stylesheet" href="./assets/css/styles.css?v=1.0.1" />
+  <!-- Font Awesome async -->
+  <link rel="preload" as="style" href="./assets/fa-5/css/font-awesome.min.css?v=1.0.1"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="./assets/fa-5/css/font-awesome.min.css?v=1.0.1">
+  </noscript>
+  <script>
+    // Force latest version for returning users
+    (function () {
+      const v = '1.0.1';
+      if (localStorage.getItem('gfix_v') !== v) {
+        localStorage.clear();
+        sessionStorage.clear();
+        localStorage.setItem('gfix_v', v);
+      }
+    })();
+  </script>
 </head>
 
 <body>
@@ -46,7 +70,7 @@
           <a href="projects.html" class="nav-dropdown-toggle"><i class="fa fa-briefcase"></i> Projects <i
               class="fa fa-chevron-down nav-chevron"></i></a>
           <div class="nav-dropdown-menu">
-            <a href="projects.html#good-partner"><i class="fa fa-link"></i> Partners</a>
+            <a href="projects.html#good-partner"><i class="fa fa-link"></i> Good Partners</a>
           </div>
         </div>
         <a href="team.html"><i class="fa fa-users"></i> Team</a>
@@ -101,7 +125,7 @@
         <!-- Video Section -->
         <div class="video-section reveal">
           <div class="video-wrapper" id="videoWrapper">
-            <video id="heroVideo"
+            <video id="heroVideo" preload="metadata"
               poster="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/GFix%20Logo%202.jpg-NCpUBiZj3UBVCep40KA3mEo3mVELov.jpeg">
               <source src="./assets/Video/GFix Intro.mp4" type="video/mp4">
               Your browser does not support the video tag.
@@ -196,7 +220,8 @@
       </div>
       <div class="grid grid-3">
         <article class="card service-card reveal">
-          <img src="./assets/Pictures/aitools.jpeg" alt="Premium AI Tools Access" class="service-card-img ai-img">
+          <img src="./assets/Pictures/aitools.jpeg" alt="Premium AI Tools Access" class="service-card-img ai-img"
+            loading="lazy">
           <div class="service-card-body">
             <div class="icon-box"><i class="fa fa-magic"></i></div>
             <h3>Premium AI Tools Access</h3>
@@ -208,7 +233,7 @@
 
         <article class="card service-card reveal">
           <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&q=80&w=800"
-            alt="Graphic Designing" class="service-card-img">
+            alt="Graphic Designing" class="service-card-img" loading="lazy">
           <div class="service-card-body">
             <div class="icon-box"><i class="fa fa-paint-brush"></i></div>
             <h3>Graphic Designing</h3>
@@ -219,7 +244,7 @@
 
         <article class="card service-card reveal">
           <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&q=80&w=800"
-            alt="Video Editing" class="service-card-img">
+            alt="Video Editing" class="service-card-img" loading="lazy">
           <div class="service-card-body">
             <div class="icon-box"><i class="fa fa-video-camera"></i></div>
             <h3>Video Editing</h3>
@@ -230,7 +255,7 @@
 
         <article class="card service-card reveal">
           <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800"
-            alt="Digital Marketing" class="service-card-img">
+            alt="Digital Marketing" class="service-card-img" loading="lazy">
           <div class="service-card-body">
             <div class="icon-box"><i class="fa fa-bullhorn"></i></div>
             <h3>Digital Marketing</h3>
@@ -240,7 +265,7 @@
 
         <article class="card service-card reveal">
           <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=800"
-            alt="Web Development" class="service-card-img">
+            alt="Web Development" class="service-card-img" loading="lazy">
           <div class="service-card-body">
             <div class="icon-box"><i class="fa fa-code"></i></div>
             <h3>Web Development</h3>
@@ -251,7 +276,7 @@
 
         <article class="card service-card reveal">
           <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&q=80&w=800"
-            alt="Online Presence" class="service-card-img">
+            alt="Online Presence" class="service-card-img" loading="lazy">
           <div class="service-card-body">
             <div class="icon-box"><i class="fa fa-globe"></i></div>
             <h3>Online Presence</h3>
@@ -261,7 +286,7 @@
 
         <article class="card service-card reveal">
           <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&q=80&w=800"
-            alt="Videography & Photography" class="service-card-img">
+            alt="Videography & Photography" class="service-card-img" loading="lazy">
           <div class="service-card-body">
             <div class="icon-box"><i class="fa fa-camera-retro"></i></div>
             <h3>Videography & Photography</h3>
@@ -501,7 +526,7 @@
     </div>
   </footer>
 
-  <script src="./assets/script/script.js"></script>
+  <script src="./assets/script/script.js?v=1.0.1"></script>
 </body>
 
 </html>

@@ -6,13 +6,17 @@ document.addEventListener('DOMContentLoaded', () => {
   const navLinks = document.getElementById('navLinks');
   const yearSpan = document.getElementById('year');
 
-  // Hide Loader
-  window.addEventListener('load', () => {
-    if (loader) {
+  // Hide Loader — Hide on window load OR after a max timeout of 3 seconds for better UX
+  const hideLoader = () => {
+    if (loader && !loader.classList.contains('hidden')) {
       loader.classList.add('hidden');
       setTimeout(() => loader.style.display = 'none', 500);
     }
-  });
+  };
+
+  window.addEventListener('load', hideLoader);
+  // Fallback: If page is slow (e.g. big video/images), hide loader anyway after 3s
+  setTimeout(hideLoader, 3000);
 
   // Sticky Navbar
   window.addEventListener('scroll', () => {
@@ -36,14 +40,14 @@ document.addEventListener('DOMContentLoaded', () => {
       hamburger.classList.toggle('active');
       navLinks.classList.toggle('active');
       navLinks.classList.toggle('open');
-      
+
       // Lock/unlock body scroll
       if (navLinks.classList.contains('open')) {
         document.body.style.overflow = 'hidden';
       } else {
         document.body.style.overflow = '';
       }
-      
+
       // Close all dropdowns when hamburger closes
       if (!navLinks.classList.contains('open')) {
         navLinks.querySelectorAll('.nav-dropdown').forEach(dd => dd.classList.remove('open'));
@@ -501,7 +505,7 @@ if (starRating && fbRating) {
     star.addEventListener('click', () => {
       const val = parseInt(star.dataset.value);
       const current = parseInt(fbRating.value);
-      
+
       if (current === val) {
         fbRating.value = 0;
         stars.forEach(s => {
