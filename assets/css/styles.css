@@ -2433,6 +2433,7 @@ body.modal-open {
 .team-body h3 {
   font-size: 1.1rem;
   margin-bottom: 4px;
+  text-align: start;
 }
 
 .team-role {
@@ -2443,6 +2444,7 @@ body.modal-open {
   text-transform: uppercase;
   color: var(--blue-1);
   margin-bottom: 12px;
+  text-align: start;
 }
 
 .team-body p {
@@ -2450,6 +2452,7 @@ body.modal-open {
   font-size: .9rem;
   margin-bottom: 18px;
   line-height: 1.55;
+  text-align: start;
 }
 
 .team-socials {
