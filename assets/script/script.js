@@ -801,3 +801,32 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 });
+
+// ============ View More Toggle Function ============
+function toggleViewMore(button, sectionId) {
+  // Find the parent section
+  const section = button.closest('.service-section');
+  if (!section) return;
+
+  // Find all hidden cards in this section
+  const hiddenCards = section.querySelectorAll('.service-card.hidden-card');
+
+  // Toggle visibility
+  const isExpanded = button.classList.contains('expanded');
+
+  if (isExpanded) {
+    // Hide cards
+    hiddenCards.forEach(card => {
+      card.style.display = 'none';
+    });
+    button.classList.remove('expanded');
+    button.innerHTML = 'View More <i class="fas fa-chevron-down"></i>';
+  } else {
+    // Show cards
+    hiddenCards.forEach(card => {
+      card.style.display = 'block';
+    });
+    button.classList.add('expanded');
+    button.innerHTML = 'View Less <i class="fas fa-chevron-down"></i>';
+  }
+}

@@ -117,30 +117,6 @@
             </div>
           </div>
 
-          <div class="card service-card reveal" data-service="Branding & Identity Design">
-            <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&q=80&w=800"
-              alt="Branding & Identity Design" class="service-card-img">
-            <div class="service-card-body">
-              <div class="icon-box"><i class="fas fa-fingerprint"></i></div>
-              <h3>Branding & Identity Design</h3>
-              <p>Create memorable brand identities that resonate with your audience.</p>
-              <button class="btn btn-primary btn-sm" style="margin-top: auto; width: 100%;"
-                onclick="openServiceModal('Branding & Identity Design')">Get a Quote →</button>
-            </div>
-          </div>
-
-          <div class="card service-card reveal" data-service="Social Media Content">
-            <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=800"
-              alt="Social Media Content" class="service-card-img">
-            <div class="service-card-body">
-              <div class="icon-box"><i class="fas fa-share"></i></div>
-              <h3>Social Media Content</h3>
-              <p>Engaging content that drives engagement and builds your online presence.</p>
-              <button class="btn btn-primary btn-sm" style="margin-top: auto; width: 100%;"
-                onclick="openServiceModal('Social Media Content')">Get a Quote →</button>
-            </div>
-          </div>
-
           <div class="card service-card reveal" data-service="Digital Marketing">
             <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&q=80&w=800"
               alt="Digital Marketing" class="service-card-img">
@@ -153,7 +129,31 @@
             </div>
           </div>
 
-          <div class="card service-card reveal" data-service="Social Media Management">
+          <div class="card service-card reveal hidden-card" data-service="Branding & Identity Design">
+            <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&q=80&w=800"
+              alt="Branding & Identity Design" class="service-card-img">
+            <div class="service-card-body">
+              <div class="icon-box"><i class="fas fa-fingerprint"></i></div>
+              <h3>Branding & Identity Design</h3>
+              <p>Create memorable brand identities that resonate with your audience.</p>
+              <button class="btn btn-primary btn-sm" style="margin-top: auto; width: 100%;"
+                onclick="openServiceModal('Branding & Identity Design')">Get a Quote →</button>
+            </div>
+          </div>
+
+          <div class="card service-card reveal hidden-card" data-service="Social Media Content">
+            <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=800"
+              alt="Social Media Content" class="service-card-img">
+            <div class="service-card-body">
+              <div class="icon-box"><i class="fas fa-share"></i></div>
+              <h3>Social Media Content</h3>
+              <p>Engaging content that drives engagement and builds your online presence.</p>
+              <button class="btn btn-primary btn-sm" style="margin-top: auto; width: 100%;"
+                onclick="openServiceModal('Social Media Content')">Get a Quote →</button>
+            </div>
+          </div>
+
+          <div class="card service-card reveal hidden-card" data-service="Social Media Management">
             <img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?auto=format&fit=crop&q=80&w=800"
               alt="Social Media Management" class="service-card-img">
             <div class="service-card-body">
@@ -165,7 +165,7 @@
             </div>
           </div>
 
-          <div class="card service-card reveal" data-service="Lead Generation">
+          <div class="card service-card reveal hidden-card" data-service="Lead Generation">
             <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&q=80&w=800"
               alt="Lead Generation" class="service-card-img">
             <div class="service-card-body">
@@ -177,7 +177,7 @@
             </div>
           </div>
 
-          <div class="card service-card reveal" data-service="Content Creation">
+          <div class="card service-card reveal hidden-card" data-service="Content Creation">
             <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&q=80&w=800"
               alt="Content Creation" class="service-card-img">
             <div class="service-card-body">
@@ -188,6 +188,11 @@
                 onclick="openServiceModal('Content Creation')">Get a Quote →</button>
             </div>
           </div>
+        </div>
+        <div style="text-align: center;">
+          <button class="view-more-btn" onclick="toggleViewMore(this, 'section-1')">
+            View More <i class="fas fa-chevron-down"></i>
+          </button>
         </div>
       </div>
 
@@ -217,42 +222,6 @@
             </div>
           </div>
 
-          <div class="card service-card reveal" data-service="E-commerce Websites">
-            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=800"
-              alt="E-commerce Websites" class="service-card-img">
-            <div class="service-card-body">
-              <div class="icon-box"><i class="fas fa-shopping-cart"></i></div>
-              <h3>E-commerce Websites</h3>
-              <p>Powerful online stores that drive sales and customer engagement.</p>
-              <button class="btn btn-primary btn-sm" style="margin-top: auto; width: 100%;"
-                onclick="openServiceModal('E-commerce Websites')">Get a Quote →</button>
-            </div>
-          </div>
-
-          <div class="card service-card reveal" data-service="Portfolio Websites">
-            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800"
-              alt="Portfolio Websites" class="service-card-img">
-            <div class="service-card-body">
-              <div class="icon-box"><i class="fas fa-briefcase"></i></div>
-              <h3>Portfolio Websites</h3>
-              <p>Showcase your work with stunning portfolio websites.</p>
-              <button class="btn btn-primary btn-sm" style="margin-top: auto; width: 100%;"
-                onclick="openServiceModal('Portfolio Websites')">Get a Quote →</button>
-            </div>
-          </div>
-
-          <div class="card service-card reveal" data-service="Landing Pages">
-            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800"
-              alt="Landing Pages" class="service-card-img">
-            <div class="service-card-body">
-              <div class="icon-box"><i class="fas fa-paper-plane"></i></div>
-              <h3>Landing Pages</h3>
-              <p>High-converting landing pages optimized for your marketing campaigns.</p>
-              <button class="btn btn-primary btn-sm" style="margin-top: auto; width: 100%;"
-                onclick="openServiceModal('Landing Pages')">Get a Quote →</button>
-            </div>
-          </div>
-
           <div class="card service-card reveal" data-service="Mobile App Development">
             <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=800"
               alt="Mobile App Development" class="service-card-img">
@@ -262,18 +231,6 @@
               <p>Native and cross-platform mobile apps for iOS and Android.</p>
               <button class="btn btn-primary btn-sm" style="margin-top: auto; width: 100%;"
                 onclick="openServiceModal('Mobile App Development')">Get a Quote →</button>
-            </div>
-          </div>
-
-          <div class="card service-card reveal" data-service="Web Applications">
-            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800"
-              alt="Web Applications" class="service-card-img">
-            <div class="service-card-body">
-              <div class="icon-box"><i class="fas fa-cogs"></i></div>
-              <h3>Web Applications</h3>
-              <p>Custom web applications tailored to your business needs.</p>
-              <button class="btn btn-primary btn-sm" style="margin-top: auto; width: 100%;"
-                onclick="openServiceModal('Web Applications')">Get a Quote →</button>
             </div>
           </div>
 
@@ -289,7 +246,55 @@
             </div>
           </div>
 
-          <div class="card service-card reveal" data-service="CRM & ERP Solutions">
+          <div class="card service-card reveal hidden-card" data-service="E-commerce Websites">
+            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=800"
+              alt="E-commerce Websites" class="service-card-img">
+            <div class="service-card-body">
+              <div class="icon-box"><i class="fas fa-shopping-cart"></i></div>
+              <h3>E-commerce Websites</h3>
+              <p>Powerful online stores that drive sales and customer engagement.</p>
+              <button class="btn btn-primary btn-sm" style="margin-top: auto; width: 100%;"
+                onclick="openServiceModal('E-commerce Websites')">Get a Quote →</button>
+            </div>
+          </div>
+
+          <div class="card service-card reveal hidden-card" data-service="Portfolio Websites">
+            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800"
+              alt="Portfolio Websites" class="service-card-img">
+            <div class="service-card-body">
+              <div class="icon-box"><i class="fas fa-briefcase"></i></div>
+              <h3>Portfolio Websites</h3>
+              <p>Showcase your work with stunning portfolio websites.</p>
+              <button class="btn btn-primary btn-sm" style="margin-top: auto; width: 100%;"
+                onclick="openServiceModal('Portfolio Websites')">Get a Quote →</button>
+            </div>
+          </div>
+
+          <div class="card service-card reveal hidden-card" data-service="Landing Pages">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800"
+              alt="Landing Pages" class="service-card-img">
+            <div class="service-card-body">
+              <div class="icon-box"><i class="fas fa-paper-plane"></i></div>
+              <h3>Landing Pages</h3>
+              <p>High-converting landing pages optimized for your marketing campaigns.</p>
+              <button class="btn btn-primary btn-sm" style="margin-top: auto; width: 100%;"
+                onclick="openServiceModal('Landing Pages')">Get a Quote →</button>
+            </div>
+          </div>
+
+          <div class="card service-card reveal hidden-card" data-service="Web Applications">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800"
+              alt="Web Applications" class="service-card-img">
+            <div class="service-card-body">
+              <div class="icon-box"><i class="fas fa-cogs"></i></div>
+              <h3>Web Applications</h3>
+              <p>Custom web applications tailored to your business needs.</p>
+              <button class="btn btn-primary btn-sm" style="margin-top: auto; width: 100%;"
+                onclick="openServiceModal('Web Applications')">Get a Quote →</button>
+            </div>
+          </div>
+
+          <div class="card service-card reveal hidden-card" data-service="CRM & ERP Solutions">
             <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&q=80&w=800"
               alt="CRM & ERP Solutions" class="service-card-img">
             <div class="service-card-body">
@@ -301,7 +306,7 @@
             </div>
           </div>
 
-          <div class="card service-card reveal" data-service="Custom Software Development">
+          <div class="card service-card reveal hidden-card" data-service="Custom Software Development">
             <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=800"
               alt="Custom Software Development" class="service-card-img">
             <div class="service-card-body">
@@ -312,6 +317,11 @@
                 onclick="openServiceModal('Custom Software Development')">Get a Quote →</button>
             </div>
           </div>
+        </div>
+        <div style="text-align: center;">
+          <button class="view-more-btn" onclick="toggleViewMore(this, 'section-2')">
+            View More <i class="fas fa-chevron-down"></i>
+          </button>
         </div>
       </div>
 
@@ -341,6 +351,18 @@
             </div>
           </div>
 
+          <div class="card service-card reveal" data-service="Startup Digital Setup">
+            <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&q=80&w=800"
+              alt="Startup Digital Setup" class="service-card-img">
+            <div class="service-card-body">
+              <div class="icon-box"><i class="fas fa-lightbulb"></i></div>
+              <h3>Startup Digital Setup</h3>
+              <p>Complete digital setup for startups to launch successfully.</p>
+              <button class="btn btn-primary btn-sm" style="margin-top: auto; width: 100%;"
+                onclick="openServiceModal('Startup Digital Setup')">Get a Quote →</button>
+            </div>
+          </div>
+
           <div class="card service-card reveal" data-service="Brand Development">
             <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&q=80&w=800"
               alt="Brand Development" class="service-card-img">
@@ -353,7 +375,7 @@
             </div>
           </div>
 
-          <div class="card service-card reveal" data-service="Online Presence Management">
+          <div class="card service-card reveal hidden-card" data-service="Online Presence Management">
             <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800"
               alt="Online Presence Management" class="service-card-img">
             <div class="service-card-body">
@@ -365,7 +387,7 @@
             </div>
           </div>
 
-          <div class="card service-card reveal" data-service="Business Consultation">
+          <div class="card service-card reveal hidden-card" data-service="Business Consultation">
             <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&q=80&w=800"
               alt="Business Consultation" class="service-card-img">
             <div class="service-card-body">
@@ -377,7 +399,7 @@
             </div>
           </div>
 
-          <div class="card service-card reveal" data-service="Digital Strategy Planning">
+          <div class="card service-card reveal hidden-card" data-service="Digital Strategy Planning">
             <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&q=80&w=800"
               alt="Digital Strategy Planning" class="service-card-img">
             <div class="service-card-body">
@@ -388,18 +410,11 @@
                 onclick="openServiceModal('Digital Strategy Planning')">Get a Quote →</button>
             </div>
           </div>
-
-          <div class="card service-card reveal" data-service="Startup Digital Setup">
-            <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&q=80&w=800"
-              alt="Startup Digital Setup" class="service-card-img">
-            <div class="service-card-body">
-              <div class="icon-box"><i class="fas fa-lightbulb"></i></div>
-              <h3>Startup Digital Setup</h3>
-              <p>Complete digital setup for startups to launch successfully.</p>
-              <button class="btn btn-primary btn-sm" style="margin-top: auto; width: 100%;"
-                onclick="openServiceModal('Startup Digital Setup')">Get a Quote →</button>
-            </div>
-          </div>
+        </div>
+        <div style="text-align: center;">
+          <button class="view-more-btn" onclick="toggleViewMore(this, 'section-3')">
+            View More <i class="fas fa-chevron-down"></i>
+          </button>
         </div>
       </div>
 
@@ -441,30 +456,6 @@
                 onclick="openServiceModal('AI Chat & Research')">Get a Quote →</button>
             </div>
           </div>
-          
-          <div class="card service-card reveal" data-service="AI Content Creation">
-            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800"
-              alt="AI Content Creation" class="service-card-img">
-            <div class="service-card-body">
-              <div class="icon-box"><i class="fas fa-file"></i></div>
-              <h3>AI Content Creation</h3>
-              <p>Generate blogs, captions, ads, and SEO content with AI tools.</p>
-              <button class="btn btn-primary btn-sm" style="margin-top: auto; width: 100%;"
-                onclick="openServiceModal('AI Content Creation')">Get a Quote →</button>
-            </div>
-          </div>
-
-          <div class="card service-card reveal" data-service="AI Design & Media">
-            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800"
-              alt="AI Design & Media" class="service-card-img">
-            <div class="service-card-body">
-              <div class="icon-box"><i class="fas fa-palette"></i></div>
-              <h3>AI Design & Media</h3>
-              <p>Create stunning visuals with MidJourney, Runway ML, Kling AI, Hailuo AI.</p>
-              <button class="btn btn-primary btn-sm" style="margin-top: auto; width: 100%;"
-                onclick="openServiceModal('AI Design & Media')">Get a Quote →</button>
-            </div>
-          </div>
 
           <div class="card service-card reveal" data-service="AI Video Generation & Editing">
             <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800"
@@ -477,8 +468,32 @@
                 onclick="openServiceModal('AI Video Generation & Editing')">Get a Quote →</button>
             </div>
           </div>
+          
+          <div class="card service-card reveal hidden-card" data-service="AI Content Creation">
+            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800"
+              alt="AI Content Creation" class="service-card-img">
+            <div class="service-card-body">
+              <div class="icon-box"><i class="fas fa-file"></i></div>
+              <h3>AI Content Creation</h3>
+              <p>Generate blogs, captions, ads, and SEO content with AI tools.</p>
+              <button class="btn btn-primary btn-sm" style="margin-top: auto; width: 100%;"
+                onclick="openServiceModal('AI Content Creation')">Get a Quote →</button>
+            </div>
+          </div>
 
-          <div class="card service-card reveal" data-service="Business Automation">
+          <div class="card service-card reveal hidden-card" data-service="AI Design & Media">
+            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800"
+              alt="AI Design & Media" class="service-card-img">
+            <div class="service-card-body">
+              <div class="icon-box"><i class="fas fa-palette"></i></div>
+              <h3>AI Design & Media</h3>
+              <p>Create stunning visuals with MidJourney, Runway ML, Kling AI, Hailuo AI.</p>
+              <button class="btn btn-primary btn-sm" style="margin-top: auto; width: 100%;"
+                onclick="openServiceModal('AI Design & Media')">Get a Quote →</button>
+            </div>
+          </div>
+
+          <div class="card service-card reveal hidden-card" data-service="Business Automation">
             <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800"
               alt="Business Automation" class="service-card-img">
             <div class="service-card-body">
@@ -490,7 +505,7 @@
             </div>
           </div>
 
-          <div class="card service-card reveal" data-service="Marketing & Productivity AI">
+          <div class="card service-card reveal hidden-card" data-service="Marketing & Productivity AI">
             <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800"
               alt="Marketing & Productivity AI" class="service-card-img">
             <div class="service-card-body">
@@ -501,6 +516,11 @@
                 onclick="openServiceModal('Marketing & Productivity AI')">Get a Quote →</button>
             </div>
           </div>
+        </div>
+        <div style="text-align: center;">
+          <button class="view-more-btn" onclick="toggleViewMore(this, 'section-4')">
+            View More <i class="fas fa-chevron-down"></i>
+          </button>
         </div>
       </div>
 
@@ -530,54 +550,6 @@
             </div>
           </div>
 
-          <div class="card service-card reveal" data-service="EIN Formation">
-            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800"
-              alt="EIN Formation" class="service-card-img">
-            <div class="service-card-body">
-              <div class="icon-box"><i class="fas fa-id-card"></i></div>
-              <h3>EIN Formation</h3>
-              <p>Federal Tax ID for business & banking.</p>
-              <button class="btn btn-primary btn-sm" style="margin-top: auto; width: 100%;"
-                onclick="openServiceModal('EIN Formation')">Get a Quote →</button>
-            </div>
-          </div>
-
-          <div class="card service-card reveal" data-service="BOI Report Filing">
-            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800"
-              alt="BOI Report Filing" class="service-card-img">
-            <div class="service-card-body">
-              <div class="icon-box"><i class="fas fa-file-contract"></i></div>
-              <h3>BOI Report Filing</h3>
-              <p>2024 compliance requirement included.</p>
-              <button class="btn btn-primary btn-sm" style="margin-top: auto; width: 100%;"
-                onclick="openServiceModal('BOI Report Filing')">Get a Quote →</button>
-            </div>
-          </div>
-
-          <div class="card service-card reveal" data-service="Unique Physical Address">
-            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=800"
-              alt="Unique Physical Address" class="service-card-img">
-            <div class="service-card-body">
-              <div class="icon-box"><i class="fas fa-map-marker"></i></div>
-              <h3>Unique Physical Address</h3>
-              <p>Professional US business address.</p>
-              <button class="btn btn-primary btn-sm" style="margin-top: auto; width: 100%;"
-                onclick="openServiceModal('Unique Physical Address')">Get a Quote →</button>
-            </div>
-          </div>
-
-          <div class="card service-card reveal" data-service="Mailing Forwarding">
-            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800"
-              alt="Mailing Forwarding" class="service-card-img">
-            <div class="service-card-body">
-              <div class="icon-box"><i class="fas fa-envelope"></i></div>
-              <h3>Mailing Forwarding</h3>
-              <p>All business mail managed for you.</p>
-              <button class="btn btn-primary btn-sm" style="margin-top: auto; width: 100%;"
-                onclick="openServiceModal('Mailing Forwarding')">Get a Quote →</button>
-            </div>
-          </div>
-
           <div class="card service-card reveal" data-service="Registered Agent">
             <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=800"
               alt="Registered Agent" class="service-card-img">
@@ -587,54 +559,6 @@
               <p>1 Year service included.</p>
               <button class="btn btn-primary btn-sm" style="margin-top: auto; width: 100%;"
                 onclick="openServiceModal('Registered Agent')">Get a Quote →</button>
-            </div>
-          </div>
-
-          <div class="card service-card reveal" data-service="Articles of Organization">
-            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800"
-              alt="Articles of Organization" class="service-card-img">
-            <div class="service-card-body">
-              <div class="icon-box"><i class="fas fa-file-contract"></i></div>
-              <h3>Articles of Organization</h3>
-              <p>Official LLC documents.</p>
-              <button class="btn btn-primary btn-sm" style="margin-top: auto; width: 100%;"
-                onclick="openServiceModal('Articles of Organization')">Get a Quote →</button>
-            </div>
-          </div>
-
-          <div class="card service-card reveal" data-service="Reseller Certificate">
-            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800"
-              alt="Reseller Certificate" class="service-card-img">
-            <div class="service-card-body">
-              <div class="icon-box"><i class="fas fa-certificate"></i></div>
-              <h3>Reseller Certificate</h3>
-              <p>For tax-exempt purchasing.</p>
-              <button class="btn btn-primary btn-sm" style="margin-top: auto; width: 100%;"
-                onclick="openServiceModal('Reseller Certificate')">Get a Quote →</button>
-            </div>
-          </div>
-
-          <div class="card service-card reveal" data-service="Seller Permit">
-            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800"
-              alt="Seller Permit" class="service-card-img">
-            <div class="service-card-body">
-              <div class="icon-box"><i class="fas fa-file-contract"></i></div>
-              <h3>Seller Permit</h3>
-              <p>Required for e-commerce/Amazon.</p>
-              <button class="btn btn-primary btn-sm" style="margin-top: auto; width: 100%;"
-                onclick="openServiceModal('Seller Permit')">Get a Quote →</button>
-            </div>
-          </div>
-
-          <div class="card service-card reveal" data-service="Wise Business Bank & Payoneer">
-            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800"
-              alt="Wise Business Bank & Payoneer" class="service-card-img">
-            <div class="service-card-body">
-              <div class="icon-box"><i class="fas fa-university"></i></div>
-              <h3>Wise Business Bank & Payoneer</h3>
-              <p>US bank account setup.</p>
-              <button class="btn btn-primary btn-sm" style="margin-top: auto; width: 100%;"
-                onclick="openServiceModal('Wise Business Bank & Payoneer')">Get a Quote →</button>
             </div>
           </div>
 
@@ -649,6 +573,107 @@
                 onclick="openServiceModal('USA Phone Number')">Get a Quote →</button>
             </div>
           </div>
+
+          <div class="card service-card reveal hidden-card" data-service="EIN Formation">
+            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800"
+              alt="EIN Formation" class="service-card-img">
+            <div class="service-card-body">
+              <div class="icon-box"><i class="fas fa-id-card"></i></div>
+              <h3>EIN Formation</h3>
+              <p>Federal Tax ID for business & banking.</p>
+              <button class="btn btn-primary btn-sm" style="margin-top: auto; width: 100%;"
+                onclick="openServiceModal('EIN Formation')">Get a Quote →</button>
+            </div>
+          </div>
+
+          <div class="card service-card reveal hidden-card" data-service="BOI Report Filing">
+            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800"
+              alt="BOI Report Filing" class="service-card-img">
+            <div class="service-card-body">
+              <div class="icon-box"><i class="fas fa-file-contract"></i></div>
+              <h3>BOI Report Filing</h3>
+              <p>2024 compliance requirement included.</p>
+              <button class="btn btn-primary btn-sm" style="margin-top: auto; width: 100%;"
+                onclick="openServiceModal('BOI Report Filing')">Get a Quote →</button>
+            </div>
+          </div>
+
+          <div class="card service-card reveal hidden-card" data-service="Unique Physical Address">
+            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=800"
+              alt="Unique Physical Address" class="service-card-img">
+            <div class="service-card-body">
+              <div class="icon-box"><i class="fas fa-map-marker"></i></div>
+              <h3>Unique Physical Address</h3>
+              <p>Professional US business address.</p>
+              <button class="btn btn-primary btn-sm" style="margin-top: auto; width: 100%;"
+                onclick="openServiceModal('Unique Physical Address')">Get a Quote →</button>
+            </div>
+          </div>
+
+          <div class="card service-card reveal hidden-card" data-service="Mailing Forwarding">
+            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800"
+              alt="Mailing Forwarding" class="service-card-img">
+            <div class="service-card-body">
+              <div class="icon-box"><i class="fas fa-envelope"></i></div>
+              <h3>Mailing Forwarding</h3>
+              <p>All business mail managed for you.</p>
+              <button class="btn btn-primary btn-sm" style="margin-top: auto; width: 100%;"
+                onclick="openServiceModal('Mailing Forwarding')">Get a Quote →</button>
+            </div>
+          </div>
+
+          <div class="card service-card reveal hidden-card" data-service="Articles of Organization">
+            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800"
+              alt="Articles of Organization" class="service-card-img">
+            <div class="service-card-body">
+              <div class="icon-box"><i class="fas fa-file-contract"></i></div>
+              <h3>Articles of Organization</h3>
+              <p>Official LLC documents.</p>
+              <button class="btn btn-primary btn-sm" style="margin-top: auto; width: 100%;"
+                onclick="openServiceModal('Articles of Organization')">Get a Quote →</button>
+            </div>
+          </div>
+
+          <div class="card service-card reveal hidden-card" data-service="Reseller Certificate">
+            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800"
+              alt="Reseller Certificate" class="service-card-img">
+            <div class="service-card-body">
+              <div class="icon-box"><i class="fas fa-certificate"></i></div>
+              <h3>Reseller Certificate</h3>
+              <p>For tax-exempt purchasing.</p>
+              <button class="btn btn-primary btn-sm" style="margin-top: auto; width: 100%;"
+                onclick="openServiceModal('Reseller Certificate')">Get a Quote →</button>
+            </div>
+          </div>
+
+          <div class="card service-card reveal hidden-card" data-service="Seller Permit">
+            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800"
+              alt="Seller Permit" class="service-card-img">
+            <div class="service-card-body">
+              <div class="icon-box"><i class="fas fa-file-contract"></i></div>
+              <h3>Seller Permit</h3>
+              <p>Required for e-commerce/Amazon.</p>
+              <button class="btn btn-primary btn-sm" style="margin-top: auto; width: 100%;"
+                onclick="openServiceModal('Seller Permit')">Get a Quote →</button>
+            </div>
+          </div>
+
+          <div class="card service-card reveal hidden-card" data-service="Wise Business Bank & Payoneer">
+            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800"
+              alt="Wise Business Bank & Payoneer" class="service-card-img">
+            <div class="service-card-body">
+              <div class="icon-box"><i class="fas fa-university"></i></div>
+              <h3>Wise Business Bank & Payoneer</h3>
+              <p>US bank account setup.</p>
+              <button class="btn btn-primary btn-sm" style="margin-top: auto; width: 100%;"
+                onclick="openServiceModal('Wise Business Bank & Payoneer')">Get a Quote →</button>
+            </div>
+          </div>
+        </div>
+        <div style="text-align: center;">
+          <button class="view-more-btn" onclick="toggleViewMore(this, 'section-5')">
+            View More <i class="fas fa-chevron-down"></i>
+          </button>
         </div>
       </div>
     </div>
