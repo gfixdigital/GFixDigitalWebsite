@@ -1796,6 +1796,186 @@ img {
   transform: rotate(-6deg) scale(1.05);
 }
 
+ .service-section-head {
+      position: relative;
+      display: flex;
+      align-items: flex-start;
+      gap: 32px;
+      padding: 44px 48px;
+      background: #fff;
+      border-radius: 24px;
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow-sm);
+      overflow: hidden;
+    }
+
+    /* Decorative gradient bar on the left edge */
+    .service-section-head::before {
+      content: "";
+      position: absolute;
+      left: 0; top: 0; bottom: 0;
+      width: 5px;
+      background: var(--grad);
+      border-radius: 4px 0 0 4px;
+    }
+
+    /* Faint watermark number in the background */
+    .service-section-head::after {
+      content: attr(data-num);
+      position: absolute;
+      right: 36px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      font-size: 9rem;
+      line-height: 1;
+      letter-spacing: -.06em;
+      color: var(--blue-1);
+      opacity: .05;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    /* Number badge (pill) */
+    .ssh-badge {
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 72px;
+      height: 72px;
+      border-radius: 20px;
+      background: var(--grad);
+      box-shadow: 0 12px 30px rgba(37,99,235,.30);
+      position: relative;
+      z-index: 1;
+    }
+
+    .ssh-badge-num {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      font-size: 1.6rem;
+      color: #fff;
+      letter-spacing: -.04em;
+      line-height: 1;
+    }
+
+    .ssh-badge-label {
+      font-size: .55rem;
+      font-weight: 700;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.72);
+      margin-top: 3px;
+    }
+
+    /* Text block */
+    .ssh-body {
+      position: relative;
+      z-index: 1;
+    }
+
+    .ssh-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--blue-1);
+      margin-bottom: 10px;
+    }
+
+    .ssh-eyebrow::before {
+      content: "";
+      display: inline-block;
+      width: 22px;
+      height: 2px;
+      background: var(--grad);
+      border-radius: 2px;
+    }
+
+    .ssh-body h3 {
+      font-size: clamp(1.5rem, 2.8vw, 2rem);
+      font-weight: 800;
+      color: var(--black);
+      margin-bottom: 10px;
+      background: var(--grad);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .ssh-body p {
+      color: var(--muted);
+      font-size: .97rem;
+      line-height: 1.65;
+      max-width: 560px;
+    }
+
+    /* Tag chips below description */
+    .ssh-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
+    }
+
+    .ssh-tag {
+      display: inline-block;
+      padding: 5px 14px;
+      border-radius: 100px;
+      background: var(--grad-soft);
+      color: var(--blue-1);
+      font-size: .72rem;
+      font-weight: 600;
+      border: 1px solid rgba(37,99,235,.15);
+      letter-spacing: .04em;
+    }
+
+    /* Hover lift */
+    .service-section-head {
+      transition: box-shadow .35s var(--t), transform .35s var(--t);
+    }
+    .service-section-head:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-3px);
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 600px) {
+      .service-section-head {
+        flex-direction: column;
+        gap: 22px;
+        padding: 32px 28px;
+      }
+      .service-section-head::after {
+        font-size: 6rem;
+        right: 16px;
+      }
+      .ssh-badge {
+        width: 60px;
+        height: 60px;
+        border-radius: 16px;
+      }
+      .ssh-badge-num { font-size: 1.3rem; }
+    }
+
+    /* ── Page label ── */
+    .page-label {
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--blue-1);
+      opacity: .6;
+    }
+
 /* ============ Banner Slider ============ */
 .banner-slider {
   max-width: 100%;
