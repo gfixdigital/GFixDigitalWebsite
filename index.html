@@ -131,14 +131,38 @@
           <div class="video-wrapper" id="videoWrapper">
             <video id="heroVideo" preload="metadata"
               poster="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/GFix%20Logo%202.jpg-NCpUBiZj3UBVCep40KA3mEo3mVELov.jpeg">
-              <source src="./assets/Video/GFix Intro.mp4" type="video/mp4">
+              <source src="https://ik.imagekit.io/vveiuli91/GFix%20Intro.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
+            
+            <!-- Custom Play Overlay -->
             <button class="video-play-btn" id="videoPlayBtn" aria-label="Play video">
               <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
                 <polygon points="5 3 19 12 5 21 5 3"></polygon>
               </svg>
             </button>
+
+            <!-- Custom Premium Controls -->
+            <div class="custom-controls" id="customControls">
+              <div class="progress-area">
+                <div class="progress-bar">
+                  <div class="progress-filled" id="progressFilled"></div>
+                </div>
+              </div>
+              <div class="controls-main">
+                <div class="controls-left">
+                  <button class="c-btn" id="cPlayPause"><i class="fas fa-play"></i></button>
+                  <div class="c-time"><span id="cCurrent">0:00</span> / <span id="cDuration">0:00</span></div>
+                </div>
+                <div class="controls-right">
+                  <div class="volume-group">
+                    <button class="c-btn" id="cMute"><i class="fas fa-volume-up"></i></button>
+                    <input type="range" class="v-slider" id="vSlider" min="0" max="1" step="0.05" value="1">
+                  </div>
+                  <button class="c-btn" id="cFull"><i class="fas fa-expand"></i></button>
+                </div>
+              </div>
+            </div>
           </div>
           <p class="video-caption">Watch our intro video</p>
         </div>

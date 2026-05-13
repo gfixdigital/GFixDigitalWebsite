@@ -115,6 +115,130 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Footer Year
   if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+
+  // ============ Hero Video Logic ============
+  const heroVideo = document.getElementById('heroVideo');
+  const videoPlayBtn = document.getElementById('videoPlayBtn');
+  const videoWrapper = document.getElementById('videoWrapper');
+  const customControls = document.getElementById('customControls');
+  
+  // Custom Control Elements
+  const cPlayPause = document.getElementById('cPlayPause');
+  const cMute = document.getElementById('cMute');
+  const vSlider = document.getElementById('vSlider');
+  const cFull = document.getElementById('cFull');
+  const progressFilled = document.getElementById('progressFilled');
+  const progressArea = document.querySelector('.progress-area');
+  const cCurrent = document.getElementById('cCurrent');
+  const cDuration = document.getElementById('cDuration');
+
+  if (heroVideo && videoPlayBtn) {
+    const formatTime = (time) => {
+      const min = Math.floor(time / 60);
+      const sec = Math.floor(time % 60);
+      return `${min}:${sec < 10 ? '0' + sec : sec}`;
+    };
+
+    const togglePlay = () => {
+      if (heroVideo.paused) {
+        heroVideo.play().catch(err => console.error("Video play failed:", err));
+      } else {
+        heroVideo.pause();
+      }
+    };
+
+    // Main Play Button click
+    videoPlayBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      togglePlay();
+      customControls.classList.add('active'); // Show controls after first play
+    });
+
+    // Click on video wrapper to toggle play/pause
+    videoWrapper.addEventListener('click', (e) => {
+      // Don't toggle if clicking controls or their children
+      if (customControls.contains(e.target) || videoPlayBtn.contains(e.target)) return;
+      togglePlay();
+    });
+
+    // Custom controls play/pause
+    if (cPlayPause) {
+      cPlayPause.addEventListener('click', togglePlay);
+    }
+
+    // Video events
+    heroVideo.addEventListener('play', () => {
+      videoPlayBtn.style.opacity = '0';
+      videoPlayBtn.style.pointerEvents = 'none';
+      if (cPlayPause) cPlayPause.innerHTML = '<i class="fas fa-pause"></i>';
+      customControls.classList.add('active');
+    });
+
+    heroVideo.addEventListener('pause', () => {
+      videoPlayBtn.style.opacity = '1';
+      videoPlayBtn.style.pointerEvents = 'all';
+      if (cPlayPause) cPlayPause.innerHTML = '<i class="fas fa-play"></i>';
+    });
+
+    // Progress bar update
+    heroVideo.addEventListener('timeupdate', () => {
+      const progress = (heroVideo.currentTime / heroVideo.duration) * 100;
+      if (progressFilled) progressFilled.style.width = `${progress}%`;
+      if (cCurrent) cCurrent.textContent = formatTime(heroVideo.currentTime);
+    });
+
+    // Set duration once metadata is loaded
+    heroVideo.addEventListener('loadedmetadata', () => {
+      if (cDuration) cDuration.textContent = formatTime(heroVideo.duration);
+    });
+
+    // Click on progress bar to seek
+    if (progressArea) {
+      progressArea.addEventListener('click', (e) => {
+        const rect = progressArea.getBoundingClientRect();
+        const pos = (e.clientX - rect.left) / rect.width;
+        heroVideo.currentTime = pos * heroVideo.duration;
+      });
+    }
+
+    // Mute/Unmute
+    if (cMute) {
+      cMute.addEventListener('click', () => {
+        heroVideo.muted = !heroVideo.muted;
+        cMute.innerHTML = heroVideo.muted ? '<i class="fas fa-volume-mute"></i>' : '<i class="fas fa-volume-up"></i>';
+        if (vSlider) vSlider.value = heroVideo.muted ? 0 : heroVideo.volume;
+      });
+    }
+
+    // Volume slider
+    if (vSlider) {
+      vSlider.addEventListener('input', (e) => {
+        heroVideo.volume = e.target.value;
+        heroVideo.muted = (e.target.value === '0');
+        if (cMute) cMute.innerHTML = heroVideo.muted ? '<i class="fas fa-volume-mute"></i>' : '<i class="fas fa-volume-up"></i>';
+      });
+    }
+
+    // Fullscreen
+    if (cFull) {
+      cFull.addEventListener('click', () => {
+        if (!document.fullscreenElement) {
+          if (videoWrapper.requestFullscreen) videoWrapper.requestFullscreen();
+          else if (videoWrapper.webkitRequestFullscreen) videoWrapper.webkitRequestFullscreen();
+          else if (videoWrapper.msRequestFullscreen) videoWrapper.msRequestFullscreen();
+          cFull.innerHTML = '<i class="fas fa-compress"></i>';
+        } else {
+          if (document.exitFullscreen) document.exitFullscreen();
+          cFull.innerHTML = '<i class="fas fa-expand"></i>';
+        }
+      });
+    }
+
+    // Double click to fullscreen
+    videoWrapper.addEventListener('dblclick', () => {
+      cFull.click();
+    });
+  }
 });
 
 // ============ Courses Data ============
